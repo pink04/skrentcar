@@ -1,0 +1,84 @@
+/* 공통 */
+.main_wrap { background: url(../img/common/main_bg.png) no-repeat top -75px center; background-size:100%; padding:0 32px  }
+.main_wrap .main_tit{font-size: 20px;line-height: 30px; line-height: 24px;}
+.main_wrap .main_tit em{font-weight: 700;}
+.main_wrap .main_desc{display:block; font-size: 12px;  margin-top:10px; margin-bottom:25px}
+.main_wrap .main_desc em{font-weight: 700;}
+
+/* 예약하기 */
+.res_form_wrap {border-radius: 12px; background:#fff;margin-top: 20px;}
+.res_form_wrap .cont a {padding:0 20px;}
+.res_form_wrap .cont a {display:flex; align-items:center; height:54px;border-bottom:1px solid #efefef; box-sizing:border-box;}
+.res_form_wrap .btn{width:100%; height:56px;background:rgba(254, 83, 45, 0.84) ; color:#fff;font-weight: 700; border-radius: 0 0 12px 12px; }
+.res_form_wrap .cont a:before {content:''; display:inline-block; width:15px; height:15px;background-size: 15px; margin-right:10px}
+.res_form_wrap .ico_place:before{background:url(../img/common/ico_place_20x20.png) center / 20px;}
+.res_form_wrap .ico_date:before {background:url(../img/common/ico_date_20x20.png) center / 20px;}
+.res_form_wrap .ico_car:before  {background:url(../img/common/ico_car_20x20.png) center / 20px;}
+
+/* 예약리스트 */
+.res_list_wrap { margin-top:160px}
+.res_list_wrap .list {position:relative;height:48px; background:#fff; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08); border-radius: 24px; padding-left:100px;}
+.res_list_wrap .list img {position:absolute; top:50%; left:20px; transform: translateY(-50%);}
+.res_list_wrap .list .name {font-size: 12px; font-weight: 700; padding-top:10px;}
+.res_list_wrap .list .place {font-size: 11px; }
+.res_list_wrap .list .date {font-size: 11px; }
+.res_list_wrap .list .dday {position:absolute; top:50%; right:20px; transform: translateY(-50%); font-size:14px; font-weight:700; color: #FA4E29; }
+.res_list_wrap .link {display:block; text-align:center;  font-size: 12px;font-weight: 700;color: #FFFFFF;text-decoration-line: underline; margin-top:10px}
+
+/* 회원전용 혜택 */
+.benefit_wrap {margin-top:60px;}
+.benefit_wrap .label{padding: 2px 6px; background: #FA4E29;border-radius: 6px;font-size: 11px; font-weight: 700; color:#fff; margin-bottom:5px}
+.benefit_wrap .main_tit, .benefit_wrap .main_desc{color:#fff;}
+.benefit_wrap .main_tit em {position: relative;}
+.benefit_wrap .main_tit em:after {content:''; position:absolute; left:0; bottom:2px;display:block; width: 100%; height: 5px; background: #FFD028; opacity: 0.4;}
+.benefit_wrap .carousel li{ margin-top:10px;}
+.benefit_wrap .carousel li a{position: relative; display:block; height: 160px;  overflow: hidden;border-radius: 12px;}
+.benefit_wrap .carousel li img {position: absolute; top: 50%; left: 50%;  transform: translate(-50%, -50%); width:100%;}
+
+/* 제주컨텐츠 */
+.jejucont_wrap {margin-top:60px}
+.jejucont_wrap .carousel{display:flex; overflow:hidden}
+.jejucont_wrap .carousel li{width:200px; margin-right:15px; }
+.jejucont_wrap .carousel li:last-child{margin-right:0}
+.jejucont_wrap .carousel li a{display:block; background:#ECEEF0; border-radius: 12px; overflow: hidden;}
+.jejucont_wrap .carousel li a .img_wrap{position: relative;height:150px;}
+.jejucont_wrap .carousel li a .img_wrap img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.jejucont_wrap .carousel li a .cont_wrap{padding:15px 15px 40px;}
+.jejucont_wrap .carousel li a .cont_wrap .label{font-size: 12px; margin-bottom:5px;}
+.jejucont_wrap .carousel li a .cont_wrap .txt{line-height: 22px; font-weight: 700; font-size: 14px;}
+
+/* 이벤트 컨텐츠 */
+.eventcont_wrap {margin-top:60px}
+.eventcont_wrap .carousel{display:flex; overflow:hidden}
+.eventcont_wrap .carousel li{width:140px; margin-right:15px}
+.eventcont_wrap .carousel li:last-child{margin-right:0}
+.eventcont_wrap .carousel li a{display:block; }
+.eventcont_wrap .carousel li a .img_wrap{position: relative; height:140px; overflow: hidden; border-radius: 50%;}
+.eventcont_wrap .carousel li a .img_wrap img{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.eventcont_wrap .carousel li a .cont_wrap{padding:15px 0 40px 0;}
+.eventcont_wrap .carousel li a .cont_wrap .label{font-size: 12px; margin-bottom:5px;}
+.eventcont_wrap .carousel li a .cont_wrap .txt{line-height: 22px; font-weight: 700; font-size: 14px;}
+
+/* 서비스 */
+.service_wrap .main_tit{font-size:18px}
+.service_wrap .list a{display:flex; align-items: center;  padding:15px 0; border-bottom: 1px solid #ECEEF0;}
+.service_wrap .list a:before{content:''; display:inline-block; width:64px; height:64px;border-radius:50%; margin-right:15px; }
+.service_wrap .list a.pay:before{ background:#ECEEF0 url('../img/common/ico_pay.png') center no-repeat;  background-size:32px 32px}
+.service_wrap .list a.care:before{ background:#ECEEF0 url('../img/common/ico_care.png') center no-repeat; background-size:32px 32px }
+.service_wrap .list a.link:before{ background:#ECEEF0 url('../img/common/ico_link.png') center no-repeat ; background-size:32px 32px}
+.service_wrap .list a.live:before{ background:#ECEEF0 url('../img/common/ico_live.png') center no-repeat; background-size:32px 32px}
+.service_wrap .list a.bilicar:before{ background:#ECEEF0 url('../img/common/ico_bilicar.png') center no-repeat; background-size:32px 32px}
+.service_wrap .list .cont_wrap em{display:block;font-weight: 700; font-size: 14px; margin-bottom:5px }
+.service_wrap .list .cont_wrap em b{color:#FA4E29 }
+.service_wrap .list .cont_wrap span{display:block;font-size: 12px; color: #858B93;} 
+
+/* 배너 */
+.banner_wrap {position:relative; height:480px; background: url(../img/temp/@banner_bg.jpg) center no-repeat;background-size: cover; margin:0 -30px}
+.banner_wrap .cont{position:absolute; bottom:30px; left:50%; transform: translateX(-50%); background:#fff; width:calc(100% - 60px); box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);border-radius: 12px; padding:20px;}
+.banner_wrap .cont .tit {font-weight: 700;font-size: 16px;}
+.banner_wrap .cont .tit em{position: relative; color:#FA4E29 }
+.banner_wrap .cont .tit em:after {content:''; position:absolute; left:0; bottom:2px;display:block; width: 100%; height: 5px; background: #FFD028; opacity: 0.4;}
+.banner_wrap .cont .desc {display:block; font-size: 12px;color: #50555C; margin-top:10px}
+.banner_wrap .cont .img {position: absolute; top: 50%; right:15px; transform: translateY(-50%);}
+
+

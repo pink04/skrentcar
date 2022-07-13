@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>스타일 가이드</title>
+      <link rel="stylesheet" href="../assets/css/content.css" />
+      <link rel="stylesheet" href="../assets/css/guide.css" />
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+      <div id="app">
+        <div class="wrap layout">
+          <div class="fix_menu">
+              <ul>
+                <li><a href="#header">헤더</a></li>
+                <li><a href="#font">폰트</a></li>
+                <li><a href="#form">form</a></li>
+                <li><a href="#tab">tab</a></li>
+              </ul>
+          </div>
+          <div id="content">
+            <section class="guide_section" id="font">
+              <h1>Font</h1>
+              <p>Pretendard 400 기본</p>
+              <p class="Pretendard_700">Pretendard 700</p>
+            </section>
+            <section class="guide_section" id="header">
+              <h1>헤더</h1>
+              <!-- 메인 -->
+              <div class="main_wrap">
+                <header class="header">
+                  <div class="nav_wrap">
+                      <a href="/" class="brand"><h1 class="blind">SK렌터카</h1></a>
+                  </div>
+                  <div class="side_menu">
+                      <a href="#" class="ico_res"><span class="blind">예약확인</span></a>
+                      <a href="#" class="ico_chat"><span class="blind">상담</span></a>
+                      <a href="#" class="ico_menu"><span class="blind">메뉴</span></a>
+                  </div>
+                </header>
+              </div>
+              <!-- 검색 -->
+              <header class="header">
+                <div class="nav_wrap">
+                  <a href="#" class="ico_back"><span class="blind">뒤로가기</span></a>
+                </div>
+                <div class="sch_wrap">
+                  <input id="serch" name="serch" type="serch" value="" placeholder="인천공항2여객터미널 (2일 6시간 30분)">
+                </div>
+                <div class="side_menu">
+                    <a href="#" class="ico_menu"><span class="blind">메뉴</span></a>
+                </div>
+              </header>
+
+              <header class="header">
+                <div class="nav_wrap">
+                    <a href="#" class="ico_back"><span class="blind">뒤로가기</span></a>
+                    <h2>타이틀</h2>
+                </div>
+                <div class="side_menu">
+                    <a href="#" class="ico_share"><span class="blind">공유</span></a>
+                </div>
+              </header>
+
+              <header class="header">
+                <div class="nav_wrap">
+                    <a href="#" class="ico_back"><span class="blind">뒤로가기</span></a>
+                    <h2>타이틀</h2>
+                </div>
+                <div class="side_menu">
+                    <a href="#" class="ico_close"><span class="blind">닫기</span></a>
+                </div>
+              </header>
+              <!-- 라벨 -->
+              <header class="header">
+                <div class="nav_wrap">
+                    <a href="#" class="ico_back"><span class="blind">뒤로가기</span></a>
+                    <h2>타이틀</h2>
+                </div>
+                <div class="side_menu">
+                  <span class="blue_label"><em>09:59</em> 이후 예약마감</span>
+                  <a href="#" class="ico_close"><span class="blind">닫기</span></a>
+                </div>
+              </header>
+              <header class="header">
+                <div class="nav_wrap">
+                    <a href="#" class="ico_back"><span class="blind">뒤로가기</span></a>
+                    <h2>타이틀</h2>
+                </div>
+              </header>
+            </section>
+            <section class="guide_section" id="form">
+              <h1>Form</h1>
+              <div class="form_row serch_wrap">
+                  <div class="form_row">
+                      <input id="serch" name="serch" type="serch" value="" placeholder="텍스트를 입력해주세요" />
+                      <button class="btn_serch"><span class="blind">Search</span></button>
+                  </div>
+              </div>
+              <div class="form_row">
+                  <label for="names" class="form_label">input</label>
+                  <input id="names" type="text" value="" placeholder="일반 활성화" />
+              </div>
+              <!-- error -->
+              <div class="form_row error">
+                  <label for="name01" class="form_label">error</label>
+                  <input id="name01" type="text" />
+                  <div class="ico_wrap">
+                    <i class="ico_error"></i>
+                  </div>
+                  <div class="valid_box">
+                      <p class="txt">아이디 형식에 맞게 입력해 주세요.</p>
+                  </div>
+              </div>
+              <div class="form_row">
+                  <label for="name02" class="form_label">read_only</label>
+                  <input id="name02" type="text" value="readonly" readonly />
+              </div>
+              <!-- disabled -->
+              <div class="form_row disabled">
+                  <label for="name03" class="form_label">disabled</label>
+                  <input id="name03" type="text" value="disabled" placeholder="disabled" disabled />
+              </div>
+              <div class="form_row">
+                <label class="form_label">textarea</label>
+                <textarea placeholder="textarea"></textarea>
+              </div>
+              <!-- error -->
+              <div class="form_row error">
+                <label class="form_label">textarea</label>
+                <textarea placeholder="textarea"></textarea>
+                <div class="valid_box">
+                    <p class="txt">아이디 형식에 맞게 입력해 주세요.</p>
+                </div>
+              </div>
+              <div class="form_row">
+                  <textarea readonly>textarea readonly</textarea>
+              </div>
+              <div class="form_row">
+                <textarea disabled>textarea disabled</textarea>
+              </div>
+              <div class="form_row select_box">
+                <label class="form_label">select_box</label>
+                <select>
+                    <option value="">SKT</option>
+                    <option value="">SKT</option>
+                    <option value="">SKT</option>
+                    <option value="">SKT</option>
+                </select>
+              </div>
+              <!-- radio  -->
+              <div class="form_row">
+                <p class="form_title">radio</p>
+                <div class="radio_group">
+                    <span class="chk_box">
+                        <input type="radio" id="radios00" name="radioDefault00" >
+                        <label for="radios00">default</label>
+                    </span>
+                    <span class="chk_box">
+                        <input type="radio" id="radios01" name="radioDefault00" disabled="">
+                        <label for="radios01">disabled</label>
+                    </span>
+                    <span class="chk_box">
+                        <input type="radio" id="radios02" name="radioDefault00" checked="">
+                        <label for="radios02">checked</label>
+                    </span>
+                </div>
+              </div>
+              <!-- checkbox -->
+              <div class="form_row">
+                <p class="form_title">checkbox</p>
+                <div class="check_group">
+                    <span class="chk_box">
+                        <input type="checkbox" id="chk00" name="chkDefault00" >
+                        <label for="chk00">default</label>
+                    </span>
+                    <span class="chk_box">
+                        <input type="checkbox" id="chk01" name="chkDefault00" disabled="">
+                        <label for="chk01">disabled</label>
+                    </span>
+                    <span class="chk_box">
+                        <input type="checkbox" id="chk02" name="chkDefault00" checked="">
+                        <label for="chk02">checked</label>
+                    </span>
+                </div>
+                <div class="check_group">
+                    <div class="block_item">
+                        <span class="chk_box">
+                            <input type="checkbox" id="chk000" name="chkDefault00" checked="">
+                            <label for="chk000">[필수] 개인정보 수집 및 이용동의</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="guide_section" id="tab">
+              <h1>Tab</h1>
+              <!-- border ornage -->
+              <div class="tab_wrap">
+                  <ul class="basic_tab type01 col_2">
+                      <li class="on"><a href="">메뉴1 </a></li>
+                      <li><a href="">메뉴2</a></li>
+                  </ul>
+              </div>
+              <div class="tab_wrap">
+                  <ul class="basic_tab col_2">
+                      <li class="on"><a href="">메뉴1</a></li>
+                      <li><a href="">메뉴2</a></li>
+                  </ul>
+              </div>
+              <div class="tab_wrap">
+                  <ul class="basic_tab col_3">
+                      <li class="on"><a href="">메뉴1</a></li>
+                      <li><a href="">메뉴2</a></li>
+                      <li><a href="">메뉴3</a></li>
+                  </ul>
+              </div>
+              <div class="tab_wrap">
+                  <ul class="basic_tab col_4">
+                      <li class="on"><a href="">메뉴1</a></li>
+                      <li><a href="">메뉴2</a></li>
+                      <li><a href="">메뉴3</a></li>
+                      <li><a href="">메뉴4</a></li>
+                  </ul>
+              </div>
+          </section>
+          </div>
+        </div>
+      </div>
+      <script src="/assets/js/library/swiper-bundle.min.js"></script>
+      <script src="../../assets/js/app.js"></script>
+      <script>
+          var swiper = new Swiper(".swiper", {
+              pagination: {
+                  el: ".swiper-pagination",
+                  type: "fraction",
+              },
+              navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+              },
+          });
+      </script>
+  </body>
+</html>

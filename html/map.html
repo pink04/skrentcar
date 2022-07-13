@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>SK렌터카 MAP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+<style>
+.ov-h {position:fixed;top:0;left:0; display:flex; justify-content: space-between; align-items: center; width:100%; height:60px; padding:0 20px  }
+.ov-h h1 {font-size:20px}
+.ov-h span {float:right;font-size:12px}
+.ta-l {text-align:left}
+.ta-c {text-align:center}
+.ta-r {text-align:right}
+
+.complete{background:#fffccb}
+
+th,td {padding:10px;border-bottom:1px solid #eee;font-size:11px;}
+th {background:#FA4E29;color:#fff;text-align: center;}
+td {color:#666;}
+td a.on {color:blue;font-weight:bold}
+th + th, td + td {border-left:1px solid #eee;}
+tr.border td {border-top:2px solid #ddd}
+
+.layout {width:100%;overflow:hidden;padding:60px 0 0; }
+.layout table {width:calc(100% - 430px);}
+.iframe {position:fixed;top:60px;right:10px;width:410px;height:844px; }
+.iframe .device_type {display:inline-block;width:100%;}
+.iframe .device_type li {float:left;width:50%;padding:0 0 5px}
+.iframe .device_type li a {color:#ccc;font-size:11px}
+.iframe .device_type li a.on {color:#000;}
+.iframe iframe {width:100%;height:100%;border:1px solid #ddd;}
+
+.blank {display:inline-block;border-radius:8px; margin-left:10px;font-size:12px;padding:3px 10px; background: #cecece;color:#fff;}
+
+@media all and (max-width:800px) {
+	.iframe.type2 {display:none}
+	.layout table {width:100%;}
+	.layout table colgroup {display:none;}
+	.layout table th:last-child, .layout table th:nth-child(6) {display:none}
+	.layout table td:last-child, .layout table td:nth-child(6) {display:none}
+	.layout table td.ta-c.date  + td + td a {display:block;width:100%;text-align:center;}
+	.blank {width:100%;margin:10px 0 0;padding:.5rem 0;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<div class="map_wrap">
+  <div class="ov-h">
+	<h1><strong>SK렌터카 닷컴 리뉴얼 모바일 MAP</strong></h1>
+	<span>작업진행 : 2021.08.24~</span>
+</div>
+<div class="layout">
+  <table>
+    <colgroup>
+      <col width="12%">
+      <col width="12%">
+      <col width="12%">
+      <col width="5%">
+      <col width="10%" />
+      <col width="20%" />
+      <col width="15%" />
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <th>1depth</th>
+        <th>2depth</th>
+        <th>3depth</th>
+        <th>진척률</th>
+        <th>화면 ID</th>
+        <th>파일명</th>
+        <th>비고</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="">
+        <td>메인</td>
+        <td></td>
+        <td></td>
+        <td>80%</td>
+        <td>MAIN</td>
+        <td>
+            <a href="MAIN.html" target="iframe_a"><MAIN></MAIN>MAIN.html</a><a href="MAIN.html" target="_blank" title="새창열림" class="blank">새창</a>
+        </td>
+        <td></td>
+      </tr>
+      <tr class="">
+        <td></td>
+        <td>LEFT MENU</td>
+        <td></td>
+        <td>100%</td>
+        <td>COMMON_LPOP_MENU</td>
+        <td>
+            <a href="COMMON_LPOP_MENU.html" target="iframe_a"><MAIN></MAIN>COMMON_LPOP_MENU.html</a><a href="COMMON_LPOP_MENU.html" target="_blank" title="새창열림" class="blank">새창</a>
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+<div class="iframe">
+	<iframe src="MAIN.html" frameborder="0" name="iframe_a"></iframe>
+</div>
+</div>
+</body>
+</html>
