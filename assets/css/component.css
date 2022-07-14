@@ -74,17 +74,11 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .item_total span strong {font-size: 16px; font-weight: 700; line-height: 24px;}
 .item_total p {font-size: 11px; line-height: 16px; color: #858B93;}
 
-.res_info_box {padding: 24px 20px 20px; background: #F7F7F9; border: 1px solid #ECEEF0; border-radius: 12px;}
-.res_info_box .form_label {font-size: 12px; line-height: 18px; font-weight: 700;}
-.res_info_box input {margin-top: 8px;}
-.res_info_box .w_box {display: flex; width: 100%;}
-.res_info_box .w_box input {margin-top: 0;}
-.res_info_box .w_box > input + .btn_addrSerch {margin-left: 8px;}
-.form_row .btn_addrSerch {display: inline-block; min-width: 90px; height: 48px; line-height: 48px; background: #FFF; border: 1px solid #50555C; border-radius: 8px; font-size: 14px; color: #50555C; text-align: center;}
+
 .form_row .ex_box {margin-top: 8px;}
 .form_row .ex_box .txt {font-size: 12px; line-height: 18px; color: #858B93; margin-top: 4px;}
 
-.license_img { margin:10px auto 20px; overflow: hidden;}
+.license_img { margin:20px auto; overflow: hidden;}
 .license_img img {width: 100%;object-fit: cover;}
 .licence_btn {text-align: center; margin-bottom: 40px;}
 .btn_license {display: inline-block; width: calc(100% - 20px); max-width: 295px; height: 48px; line-height: 47px; background: #FFF; border: 1px solid #50555C; border-radius: 24px; font-size: 14px; text-align: center; box-sizing: border-box; }
