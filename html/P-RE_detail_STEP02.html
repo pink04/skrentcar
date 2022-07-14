@@ -1,168 +1,161 @@
 <!doctype html>
 <html lang="ko">
-
-<head>
-  <title>SK렌터카</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta charset="utf-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <meta http-equiv="cache-control" content="no-cache">
-  <meta http-equiv="pragma" content="no-cache">
-  <meta name="format-detection" content="telephone=no" />
-  <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-
-<body>
-
-  <div class="wrap">
-    <!-- s: header -->
-    <header class="header">
-      <div class="nav_wrap">
-        <a href="#" class="ico_back"><span class="blind">뒤로가기</span></a>
-        <h2>예약</h2>
-      </div>
-      <div class="side_menu">
-        <span class="blue_label"><em>09:59</em> 이후 예약마감</span>
-        <a href="#" class="ico_close"><span class="blind">닫기</span></a>
-      </div>
-    </header>
-    <!-- e: header -->
-    <!-- s : tab_wrap -->
-    <div class="tab_wrap">
-      <ul class="basic_tab type01 col_2">
-        <li><a href="">보험 및 부가용품</a></li>
-        <li class="on"><a href="">운전자 정보</a></li>
-      </ul>
-    </div>
-    <!-- e : tab_wrap -->
-    <!-- s : sub_wrap -->
-    <div class="sub_wrap">
-      <!-- s : 기본정보 -->
-      <div class="sub_cont">
-        <div class="res_tit bg03">
-          <p class="tit">운전자(예약자)<br> 정보를 입력해주세요</p>
-          <p class="desc">입력한 정보는 안전하게<br> 보호할게요</p>
+  <head>
+    <title>SK렌터카</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- s: header -->
+      <header class="header">
+        <div class="nav_wrap">
+          <a href="#" class="ico_back">
+            <span class="blind">뒤로가기</span>
+          </a>
+          <h2>예약</h2>
         </div>
-        <div class="sub_tit">
-          <h3 class="major">기본정보</h2>
-          <p class="h3_desc">상대방과 나를 보호하는 종합보험이 포함되어 있어요</p>
+        <div class="side_menu">
+          <span class="blue_label">
+            <em>09:59</em> 이후 예약마감 </span>
+          <a href="#" class="ico_close">
+            <span class="blind">닫기</span>
+          </a>
         </div>
-        <div class="info_box">
-          <div class="form_row">
-            <label for="name" class="form_label">이름</label>
-            <input id="name" type="text" value="" placeholder="이름을 입력해주세요">
-          </div>
-          <div class="form_row">
-            <label for="phone" class="form_label">휴대폰</label>
-            <input id="phone" type="tel" value="" placeholder="예) 01012345678">
-          </div>
-          <div class="form_row">
-            <label for="addr" class="form_label">주소</label>
-            <div class="w_box">
-              <input id="addr" type="text" value="" placeholder="우편번호">
-              <a href="#" class="btn_addrSerch">주소검색</a>
-            </div>
-            <input id="addrD01" type="text" value="" placeholder="" disabled="">
-            <input id="addrD02" type="text" value="" placeholder="" disabled="">
-          </div>
-        </div>
-      </div>
-      <!-- e : 기본정보 -->
-      <!--  s : 운전면허 정보 -->
-      <div class="sub_cont">
-        <div class="sub_tit">
-          <h3>운전면허 정보 <em></em></h2>
-        </div>
-        <div class="license_img"><img src="../assets/img/contents/img_license.jpg" alt="운전면허증예시"></div>
-        <div class="licence_btn">
-          <a href="#" class="btn_license">운전면허증 촬영하기</a>
-        </div>
-        <div class="info_box">
-          <div class="form_row select_box">
-            <label class="form_label">면허종류</label>
-            <select>
-              <option value="">면허종류를 선택해주세요</option>
-              <option value="">옵션1</option>
-              <option value="">옵션2</option>
-              <option value="">옵션3</option>
-              <option value="">옵션4</option>
-            </select>
-          </div>
-          <div class="form_row">
-            <label for="number" class="form_label">면허번호</label>
-            <input id="number" type="text" value="" placeholder="면허번호를 입력해주세요">
-            <div class="ex_box">
-              <p class="txt">구면허증) 서울-01-123456-00 → 0112345600</p>
-              <p class="txt">신면허증) 11-01-123456-00 → 110112345600</p>
-            </div>
-          </div>
-          <div class="form_row">
-            <label for="driverName" class="form_label">운전자 이름</label>
-            <input id="driverName" type="text" value="" placeholder="이름을 입력해주세요">
-          </div>
-          <div class="form_row">
-            <label for="birth" class="form_label">생년월일</label>
-            <input id="birth" type="tel" value="" placeholder="예) 19901231">
-          </div>
-          <div class="form_row">
-            <label for="exDate" class="form_label">만료일자</label>
-            <input id="exDate" type="tel" value="" placeholder="예) 20251231">
-          </div>
-          <div class="form_row">
-            <label for="isDate" class="form_label">발급일자</label>
-            <input id="isDate" type="tel" value="" placeholder="예) 20210101">
-          </div>
-        </div>
-      </div>
-      <!--  e : 운전면허 정보 -->
-      <!--  s : 운전자 추가 등록 -->
-      <div class="sub_cont">
-        <div class="sub_tit">
-          <h3>운전자 추가 등록</h2>
-        </div>
-        <ul class="res_driver_list">
-          <li></li>
+      </header>
+      <!-- e: header -->
+      <!-- s : tab_wrap -->
+      <div class="tab_wrap">
+        <ul class="basic_tab type01 col_2">
+          <li>
+            <a href="">보험 및 부가용품</a>
+          </li>
+          <li class="on">
+            <a href="">운전자 정보</a>
+          </li>
         </ul>
       </div>
-      <!--  e : 운전자 추가 등록 -->
+      <!-- e : tab_wrap -->
+      <!-- s : sub_wrap -->
+      <div class="sub_wrap">
+        <!-- s : 기본정보 -->
+        <div class="sub_cont">
+          <div class="res_tit bg03">
+            <p class="tit">운전자(예약자) <br> 정보를 입력해주세요 </p>
+            <p class="desc">입력한 정보는 안전하게 <br> 보호할게요 </p>
+          </div>
+          <div class="sub_tit">
+            <h3 class="major">기본정보 </h3>
+              <p class="h3_desc">상대방과 나를 보호하는 종합보험이 포함되어 있어요</p>
+          </div>
+          <div class="info_box">
+            <div class="form_row">
+              <label for="name" class="form_label">이름</label>
+              <input id="name" type="text" value="" placeholder="이름을 입력해주세요">
+            </div>
+            <div class="form_row">
+              <label for="phone" class="form_label">휴대폰</label>
+              <input id="phone" type="tel" value="" placeholder="예) 01012345678">
+            </div>
+            <div class="form_row">
+              <label for="addr" class="form_label">주소</label>
+              <div class="w_box">
+                <input id="addr" type="text" value="" placeholder="우편번호">
+                <a href="#" class="btn_addrSerch">주소검색</a>
+              </div>
+              <input id="addrD01" type="text" value="" placeholder="" disabled="">
+              <input id="addrD02" type="text" value="" placeholder="" disabled="">
+            </div>
+          </div>
+        </div>
+        <!-- e : 기본정보 -->
+        <!--  s : 운전면허 정보 -->
+        <div class="sub_cont">
+          <div class="sub_tit">
+            <h3 class="major">운전면허 정보</h3>
+          </div>
+          <div class="license_img">
+            <img src="../assets/img/contents/img_license.jpg" alt="운전면허증예시">
+          </div>
+          <div class="licence_btn">
+            <a href="#" class="btn_license">운전면허증 촬영하기</a>
+          </div>
+          <div class="info_box">
+            <div class="form_row select_box">
+              <label class="form_label">면허종류</label>
+              <select>
+                <option value="">면허종류를 선택해주세요</option>
+                <option value="">옵션1</option>
+                <option value="">옵션2</option>
+                <option value="">옵션3</option>
+                <option value="">옵션4</option>
+              </select>
+            </div>
+            <div class="form_row">
+              <label for="number" class="form_label">면허번호</label>
+              <input id="number" type="text" value="" placeholder="면허번호를 입력해주세요">
+              <div class="ex_box">
+                <p class="txt">구면허증) 서울-01-123456-00 → 0112345600</p>
+                <p class="txt">신면허증) 11-01-123456-00 → 110112345600</p>
+              </div>
+            </div>
+            <div class="form_row">
+              <label for="driverName" class="form_label">운전자 이름</label>
+              <input id="driverName" type="text" value="" placeholder="이름을 입력해주세요">
+            </div>
+            <div class="form_row">
+              <label for="birth" class="form_label">생년월일</label>
+              <input id="birth" type="tel" value="" placeholder="예) 19901231">
+            </div>
+            <div class="form_row">
+              <label for="exDate" class="form_label">만료일자</label>
+              <input id="exDate" type="tel" value="" placeholder="예) 20251231">
+            </div>
+            <div class="form_row">
+              <label for="isDate" class="form_label">발급일자</label>
+              <input id="isDate" type="tel" value="" placeholder="예) 20210101">
+            </div>
+          </div>
+        </div>
+        <!--  e : 운전면허 정보 -->
+        <!--  s : 운전자 추가 등록 -->
+        <div class="sub_cont">
+          <div class="sub_tit">
+            <h3>운전자 추가 등록 </h3>
+              <p class="h3_desc">함께 운전할 동행자를 추가 등록할 수 있어요</p>
+          </div>
+          <div class="res_part_wrap">
+            <ul class="res_part_list">
+              <li>
+                <div class="tit">
+                  <strong>두 번째 운전자</strong>
+                  <span>
+                    <a href="#">운전자 정보입력</a>
+                  </span>
+                </div>
+              </li>
+              <li class="disabled">
+                <!--  비활성화 class="disabled" -->
+                <strong>세 번째 운전자</strong>
+                <span>운전자 정보입력</span>
+              </li>
+            </ul>
+            <p class="res_ex_txt">입력한 운전자 정보와 예약자 정보가 상이할 경우 대여가 제한될 수 있습니다. 또한 연령, 면허종류, 운전경력 등 대여자격에 따라 이용 가능한 차종이 다를 수 있습니다.</p>
+          </div>
+          <div class="insur_link">
+            <a href="#">자세한 자격 조건이 궁금하세요?</a>
+            </span>
+          </div>
+        </div>
+        <!--  e : 운전자 추가 등록 -->
+      </div>
+      <!-- e : sub_wrap -->
     </div>
-    <!-- e : sub_wrap -->
-  </div>
-</body>
-
+  </body>
 </html>
-<script>
-  //선택하기 TAB
-  $('.insur_tab li').click(function () {
-    $('.insur_tab li').removeClass('on');
-    $(this).toggleClass('on');
-  });
-  //스위치
-  $('.push_toggle').click(function () {
-    if ($(this).hasClass('on') == true) {
-      $(this).removeClass('on');
-      $(this).addClass('off');
-    } else {
-      $(this).removeClass('off');
-      $(this).addClass('on');
-    }
-
-  });
-  //카운트 예시 스크립트
-  /* $('.numcontrol input[count_range]').click(function(e){
-				e.preventDefault();
-				var type = $(this).attr('count_range');
-				var $count = $(this).parent().children('input.count');
-				var count_val = $count.val(); // min 1
-				if(type=='m'){
-					if(count_val<1){
-						return;
-					}
-					$count.val(parseInt(count_val)-1);
-				}else if(type=='p'){
-					$count.val(parseInt(count_val)+1);
-				}
-			}); */
-</script>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>SK렌터카</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- s: header -->
+      <header class="header">
+        <div class="nav_wrap">
+          <h2>두번째 운전자</h2>
+        </div>
+        <div class="side_menu">
+          <a href="#" class="ico_close">
+            <span class="blind">닫기</span>
+          </a>
+        </div>
+      </header>
+      <!-- e: header -->
+      <!-- s : sub_wrap -->
+      <div class="sub_wrap">
+        <!-- s : 알림톡 보내기 -->
+        <div class="push_wrap">
+          <dl>
+            <dt>알림톡 보내기</dt>
+            <dd>동행자가 운전면허 정보를 직접 입력할 수 있어요</dd>
+          </dl>
+          <button class="push_toggle on">
+            <span></span>
+          </button>
+        </div>
+        <!-- e : 알림톡 보내기 -->
+        <!--  s :  -->
+        <div class="sub_cont">
+          <div class="form_row">
+            <label for="phone" class="form_label">휴대폰 번호</label>
+            <input id="phone" type="tel" value="" placeholder="예) 01012345678 ">
+          </div>
+        </div>
+        <!--  e : -->
+      </div>
+      <!-- e : sub_wrap -->
+    </div>
+  </body>
+</html>
+<script>
+  //스위치
+  $('.push_toggle').click(function() {
+    if ($(this).hasClass('on') == true) {
+      $(this).removeClass('on');
+      $(this).addClass('off');
+    } else {
+      $(this).removeClass('off');
+      $(this).addClass('on');
+    }
+  });
+</script>
