@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>SK렌터카</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+
+  <div class="layerPopup bottom large">
+      <div class="layerPopup_wrap">
+          <div class="layerPopup_heading">
+            <!-- s : 검색 타이틀 -->
+              <h2 class="heading">어디로 갈까요?</h2>
+              <a href="" class="btn_close">
+                <span class="blind">닫기</span>
+            </a>
+            <!-- e : 검색 타이틀 -->
+            <!-- s : 검색 창-->
+              <div class="search_input">
+                <input type="text" placeholder="지역을 검색해보세요">
+                <div class="icons">                  
+                    <a href="" class="icon_cancel_m">
+                        <span class="blind">모두 지우기</span>
+                    </a>
+                    <!-- <a href="" class="icon_search_m">
+                        <span class="blind">검색</span>
+                    </a> -->
+                </div>
+            </div>
+            <!-- e : 검색 창-->
+          </div>
+          
+          <!-- s : 하단 여행지검색 내역 영역 -->
+          <div class="layerPopup_content bg">
+            <!-- s : 검색 결과-->
+            <div class="spot_result_wrap">
+                <p class="result_title">검색결과 <em>2</em>곳</p>
+                <ul class="result_list">
+                    <li>
+                        <div class="navi_rtext">
+                            <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                            <p>대전가수원</p>
+                            <span>건양대병원</span>
+                        </div>
+                        <div class="navi_map_link">
+                            <a href="">상세</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navi_rtext">
+                            <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                            <p>대전둔산</p>
+                            <span>대전광역시청</span>
+                        </div>
+                        <div class="navi_map_link">
+                            <a href="">상세</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navi_rtext">
+                            <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                            <p>동대전</p>
+                            <span>대전광역시청</span>
+                        </div>
+                        <div class="navi_map_link">
+                            <a href="">상세</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="navi_rtext">
+                            <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                            <p>서대전</p>
+                            <span>대전광역시청</span>
+                        </div>
+                        <div class="navi_map_link">
+                            <a href="">상세</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- e : 검색 결과-->
+          </div>
+          <!-- e : 하단 여행지검색 내역 영역 -->
+          
+      </div>
+  </div>
+  <script>
+    $(".que").click(function() {
+    $(this).next(".anw").stop().slideToggle(300);
+    $(this).toggleClass('on').siblings().removeClass('on');
+    $(this).next(".anw").siblings(".anw").slideUp(300); // 1개씩 펼치기
+    });
+  </script>
+  </body>
+</html>

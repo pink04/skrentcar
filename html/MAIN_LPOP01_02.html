@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>SK렌터카</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+
+  <div class="layerPopup bottom large">
+      <div class="layerPopup_wrap">
+          <div class="layerPopup_heading">
+            <!-- s : 검색 타이틀 -->
+              <h2 class="heading">어디로 갈까요?</h2>
+              <a href="" class="btn_close">
+                <span class="blind">닫기</span>
+            </a>
+            <!-- e : 검색 타이틀 -->
+            <!-- s : 검색 창-->
+              <div class="search_input">
+                <input type="text" placeholder="지역을 검색해보세요">
+                <div class="icons">                  
+                    <a href="" class="icon_cancel_m">
+                        <span class="blind">모두 지우기</span>
+                    </a>
+                    <!-- <a href="" class="icon_search_m">
+                        <span class="blind">검색</span>
+                    </a> -->
+                </div>
+            </div>
+            <!-- e : 검색 창-->
+          </div>
+          
+          
+          <div class="layerPopup_content bg2 sdw">
+            <!-- s : 검색 결과-->
+            <div class="spot_result_wrap">
+                <p class="non_result">검색 결과가 없습니다<br>
+                    다시검색해주세요</p>
+            </div>
+            <!-- e : 검색 결과-->
+          </div>
+          
+          <div class="layerPopup_bottom sdw">
+            <div class="btn_group">
+                <!-- s : 지금 가장 인기있는 여행지 영역-->
+                <div class="select_list_wrap">
+                    <div class="spot_btns">
+                        <!-- s : 지금 가장 인기있는 여행지 타이틀-->
+                        <div class="spot_titles">
+                            <p>지금 가장 인기 있는 여행지</p>
+                            <span>최근 한 달 조회수 기준</span>
+                        </div>
+                        <!-- e : 지금 가장 인기있는 여행지 타이틀-->
+                        <!-- s : 지금 가장 인기있는 여행지 버튼-->
+                        <ul class="spot_btn_list">
+                            <li class="jeju_btn">
+                                <a href="">
+                                    <img src="../assets/img/common/ico_jeju.png" alt="제주 이미지">
+                                    <span>제주</span>
+                                    <em>특가할인</em>
+                                </a>
+                            </li>
+                            <li class="yeosu_btn">
+                                <a href="">
+                                    <img src="../assets/img/common/ico_yeosu.png" alt="여수 이미지">
+                                    <span>여수</span>
+                                </a>
+                            </li>
+                            <li class="incheon_btn">
+                                <a href="">
+                                    <img src="../assets/img/common/ico_incheon.png" alt="인천국제공항 이미지">
+                                    <span>인천국제공항</span>
+                                </a>
+                            </li>
+                            <li class="gyeongju_btn">
+                                <a href="">
+                                    <img src="../assets/img/common/ico_gyeongju.png" alt="경주 이미지">
+                                    <span>경주</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- e : 지금 가장 인기있는 여행지 버튼-->
+                    </div>
+                </div>
+                <!-- e : 지금 가장 인기있는 여행지 영역-->
+            </div>
+        </div>
+      </div>
+  </div>
+  <script>
+    $(".que").click(function() {
+    $(this).next(".anw").stop().slideToggle(300);
+    $(this).toggleClass('on').siblings().removeClass('on');
+    $(this).next(".anw").siblings(".anw").slideUp(300); // 1개씩 펼치기
+    });
+  </script>
+  </body>
+</html>

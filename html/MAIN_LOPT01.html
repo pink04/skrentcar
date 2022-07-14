@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>SK렌터카</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+
+  <div class="layerPopup bottom large">
+      <div class="layerPopup_wrap">
+          <div class="layerPopup_heading">
+            <!-- s : 검색 타이틀 -->
+              <h2 class="heading">어디로 갈까요?</h2>
+              <a href="" class="btn_close">
+                <span class="blind">닫기</span>
+            </a>
+            <!-- e : 검색 타이틀 -->
+            <!-- s : 검색 창-->
+              <div class="search_input">
+                <input type="text" placeholder="지역을 검색해보세요">
+                <div class="icons">
+                    <!-- 검색 취소버튼                   
+                    <a href="" class="icon_cancel_m">
+                        <span class="blind">모두 지우기</span>
+                    </a> -->
+                    <a href="" class="icon_search_m">
+                        <span class="blind">검색</span>
+                    </a>
+                </div>
+            </div>
+            <!-- e : 검색 창-->
+          </div>
+          
+          <!-- s : 하단 여행지검색 내역 영역 -->
+          <div class="layerPopup_content bg">
+            <div class="select_list_wrap">
+                <div class="spot_btns">
+                    <!-- s : 지금 가장 인기있는 여행지 타이틀-->
+                    <div class="spot_titles">
+                        <p>지금 가장 인기 있는 여행지</p>
+                        <span>최근 한 달 조회수 기준</span>
+                    </div>
+                    <!-- e : 지금 가장 인기있는 여행지 타이틀-->
+                    <!-- s : 지금 가장 인기있는 여행지 버튼-->
+                    <ul class="spot_btn_list">
+                        <li class="jeju_btn">
+                            <a href="">
+                                <img src="../assets/img/common/ico_jeju.png" alt="제주 이미지">
+                                <span>제주</span>
+                                <em>특가할인</em>
+                            </a>
+                        </li>
+                        <li class="yeosu_btn">
+                            <a href="">
+                                <img src="../assets/img/common/ico_yeosu.png" alt="여수 이미지">
+                                <span>여수</span>
+                            </a>
+                        </li>
+                        <li class="incheon_btn">
+                            <a href="">
+                                <img src="../assets/img/common/ico_incheon.png" alt="인천국제공항 이미지">
+                                <span>인천국제공항</span>
+                            </a>
+                        </li>
+                        <li class="gyeongju_btn">
+                            <a href="">
+                                <img src="../assets/img/common/ico_gyeongju.png" alt="경주 이미지">
+                                <span>경주</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- e : 지금 가장 인기있는 여행지 버튼-->
+                     <!-- s : 아코디언 지역메뉴-->
+                     <div class="accordion_wrap">
+                        <p class="acc_title">전체</p>
+                        <div class="que">
+                         <span class="regi_name">제주도</span>
+                         <!-- <em class="regi_box">인천</em>
+                         <em class="regi_box">제주</em> -->
+                          <div class="arrow-wrap">
+                            <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                            <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                          </div>
+                        </div>
+                        <div class="anw">
+                         <span>0000000000000000000000000000</span>
+                        </div>
+                         <!-- e : 아코디언 지역탣-->
+                        <!-- s : 아코디언 지역탣-->
+                        <div class="que">
+                            <span class="regi_name">서울</span>
+                            <!-- <em class="regi_box">인천</em>
+                            <em class="regi_box">제주</em> -->
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw">
+                        <span>0000000000000000000000000000</span>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                        <!-- s : 아코디언 지역탣-->
+                        <div class="que">
+                            <span class="regi_name">경기도</span>
+                            <em class="regi_box">인천</em>
+                            <!-- <em class="regi_box">제주</em> -->
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw">
+                        <span>0000000000000000000000000000</span>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                        <!-- s : 아코디언 지역탣-->
+                        <div class="que">
+                            <span class="regi_name">강원도</span>
+                            <!-- <em class="regi_box">인천</em>
+                            <em class="regi_box">제주</em> -->
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw">
+                        <span>0000000000000000000000000000</span>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                        <!-- s : 아코디언 지역탣-->
+                        <div class="que">
+                            <span class="regi_name">충천북도</span>
+                            <!-- <em class="regi_box">인천</em>
+                            <em class="regi_box">제주</em> -->
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw">
+                        <span>0000000000000000000000000000</span>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                        <!-- s : 아코디언 지역탣-->
+                        <div class="que on">
+                            <span class="regi_name">충청남도</span>
+                            <em class="regi_box">대전</em>
+                            <em class="regi_box">세종</em>
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"> <img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw" style="display:block">
+                            <div class="navi_map_lists">
+                                <div class="navi_map_wrap">
+                                   <!-- s : 지역 토글내 리스트-->
+                                  <div class="navi_list_group">
+                                    <p class="navi_map_title">대전</p>
+                                    <ul class="navi_map_group">
+                                        <li>
+                                            <div class="navi_rtext">
+                                                <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                                                <p>대전가수원</p>
+                                                <span>건양대병원</span>
+                                            </div>
+                                            <div class="navi_map_link">
+                                                <a href="">상세</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                                              <p>대전둔산</p>
+                                              <span>대전광역시청</span>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                                              <p>동대전</p>
+                                              <span>대전광역시청</span>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                                              <p>서대전</p>
+                                              <span>서대전네거리역</span>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                  <!-- e : 지역 토글내 리스트-->
+                                  <!-- s : 지역 토글내 리스트-->
+                                  <div class="navi_list_group">
+                                    <p class="navi_map_title">세종특별자치시</p>
+                                    <ul class="navi_map_group">
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                                              <p>대전둔산</p>
+                                              <span>대전광역시청</span>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                  <!-- e : 지역 토글내 리스트-->
+                                  <!-- s : 지역 토글내 리스트-->
+                                  <div class="navi_list_group">
+                                    <p class="navi_map_title">충청남도</p>
+                                    <ul class="navi_map_group">
+                                        <li>
+                                            <div class="navi_rtext">
+                                                <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                                                <p>공주대</p>
+                                                <span>공주대학교 신관캠퍼스</span>
+                                            </div>
+                                            <div class="navi_map_link">
+                                                <a href="">상세</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                                              <p>당진원당</p>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                                              <p>보령대동</p>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                                              <p>서산</p>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_train_org.png" alt="지하철 이미지">
+                                              <p>예산</p>
+                                              <span>서대전네거리역</span>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                        </li>
+                                        <li>
+                                          <div class="navi_rtext">
+                                              <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                                              <p>천안</p>
+                                              <span>두정역</span>
+                                          </div>
+                                          <div class="navi_map_link">
+                                              <a href="">상세</a>
+                                          </div>
+                                      </li>
+                                      <li>
+                                        <div class="navi_rtext">
+                                            <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                                            <p>서산</p>
+                                        </div>
+                                        <div class="navi_map_link">
+                                            <a href="">상세</a>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="navi_rtext">
+                                            <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                                            <p>태안</p>
+                                        </div>
+                                        <div class="navi_map_link">
+                                            <a href="">상세</a>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="navi_rtext">
+                                            <img src="../assets/img/common/ico_map_org.png" alt="맵 포인트 이미지">
+                                            <p>홍성</p>
+                                        </div>
+                                        <div class="navi_map_link">
+                                            <a href="">상세</a>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <!-- e : 지역 토글내 리스트-->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                        <!-- s : 아코디언 지역탣-->
+                        <div class="que">
+                            <span class="regi_name">전라북도</span>
+                            <!-- <em class="regi_box">인천</em>
+                            <em class="regi_box">제주</em> -->
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw">
+                        <span>0000000000000000000000000000</span>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                         <!-- s : 아코디언 지역탣-->
+                         <div class="que">
+                            <span class="regi_name">전라남도</span>
+                            <em class="regi_box">광주</em>
+                            <!-- <em class="regi_box">제주</em> -->
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw">
+                        <span>0000000000000000000000000000</span>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                         <!-- s : 아코디언 지역탣-->
+                         <div class="que">
+                            <span class="regi_name">경상북도</span>
+                            <em class="regi_box">대구</em>
+                            <!-- <em class="regi_box">제주</em> -->
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw">
+                        <span>0000000000000000000000000000</span>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                        <!-- s : 아코디언 지역탣-->
+                        <div class="que">
+                            <span class="regi_name">경상남도</span>
+                            <em class="regi_box">부산</em>
+                            <em class="regi_box">울산</em>
+                             <div class="arrow-wrap">
+                               <span class="arrow-top"><img src="../assets/img/common/ico_acoo_w.png" alt="아코디언 화살표"></span>
+                               <span class="arrow-bottom"><img src="../assets/img/common/ico_acoo_b.png" alt="아코디언 화살표"></span>
+                             </div>
+                           </div>
+                        <div class="anw">
+                        <span>0000000000000000000000000000</span>
+                        </div>
+                        <!-- e : 아코디언 지역탣-->
+                   </div>
+                    <!-- ㄷ : 아코디언 지역메뉴-->
+                </div>
+            </div>
+          </div>
+          <!-- e : 하단 여행지검색 내역 영역 -->
+
+          
+      </div>
+  </div>
+  <script>
+    $(".que").click(function() {
+    $(this).next(".anw").stop().slideToggle(300);
+    $(this).toggleClass('on').siblings().removeClass('on');
+    $(this).next(".anw").siblings(".anw").slideUp(300); // 1개씩 펼치기
+    });
+  </script>
+  </body>
+</html>
