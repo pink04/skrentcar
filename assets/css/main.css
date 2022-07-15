@@ -11,7 +11,7 @@
 .res_form_wrap {border-radius: 12px; background:#fff;margin-top: 20px;}
 .res_form_wrap .cont a {padding:0 20px;}
 .res_form_wrap .cont a {display:flex; align-items:center; height:54px;border-bottom:1px solid #efefef; box-sizing:border-box;}
-.res_form_wrap .btn{width:100%; height:56px;background:rgba(254, 83, 45, 0.84) ; color:#fff;font-weight: 700; border-radius: 0 0 12px 12px; }
+.res_form_wrap .btn{width:100%; height:56px;background:url('../img/common/btn_bg.jpg') no-repeat center ; color:#fff;font-weight: 700; border-radius: 0 0 12px 12px; }
 .res_form_wrap .cont a:before {content:''; display:inline-block; width:15px; height:15px;background-size: 15px; margin-right:10px}
 .res_form_wrap .ico_place:before{background:url(../img/common/ico_place_20x20.png) center / 20px;}
 .res_form_wrap .ico_date:before {background:url(../img/common/ico_date_20x20.png) center / 20px;}
