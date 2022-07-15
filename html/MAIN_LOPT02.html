@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>SK렌터카</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="layerPopup bottom large">
+      <div class="layerPopup_wrap">
+        <div class="layerPopup_heading">
+          <!-- s : 검색 타이틀 -->
+          <h2 class="heading">얼마 동안 빌릴까요?</h2>
+          <a href="" class="btn_close">
+            <span class="blind">닫기</span>
+          </a>
+          <!-- e : 검색 타이틀 -->
+          <p class="desc">2022.3.7 ~ 2022.3.11 (4일 6시간 30분)</p>
+          <div class="cal_wrap fixed">
+            <table class="cal_tb">
+              <thead>
+                <tr>
+                  <th>일</th>
+                  <th>월</th>
+                  <th>화</th>
+                  <th>수</th>
+                  <th>목</th>
+                  <th>금</th>
+                  <th>토</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+        <!-- s : 하단 날짜 검색 내역 영역 -->
+        <!--
+          [class 정리]
+          선택불가일 : unchecked
+          오늘 : today
+          하루대여 : checked
+          휴일 : holiday
+          대여시작일 : checked rent
+          반납일 : checked return
+          대여기간 : middle
+        -->
+        <div class="layerPopup_content">
+          <div class="cal_wrap">
+            <em>2022.07</em>
+            <table class="cal_tb">
+              <col>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="unchecked">1</td>
+                  <td class="unchecked">2 </td>
+                </tr>
+                <tr>
+                  <td class="unchecked">3 </td>
+                  <td class="unchecked">4 </td>
+                  <td class="unchecked">5 </td>
+                  <td class="unchecked">6 </td>
+                  <td class="today">7 <span>오늘</span> 
+                  </td>
+                  <td>8 </td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td class="checked"> 11 <span>대여</span>
+                  </td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="cal_wrap">
+            <em>2022.08</em>
+            <table class="cal_tb">
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>7 </td>
+                  <td>8 </td>
+                  <td>9 </td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td class="holiday">15 <span>광복절</span>
+                  </td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td class="checked rent"> 18 <span>대여</span>
+                  </td>
+                  <td class="middle">19</td>
+                  <td class="middle">20</td>
+                </tr>
+                <tr>
+                  <td class="middle">21</td>
+                  <td class="middle">22</td>
+                  <td class="checked return">23 <span>반남</span>
+                  </td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- e : 하단 날짜검색 내역 영역 -->
+      </div>
+    </div>
+  </body>
+</html>
