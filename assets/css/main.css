@@ -9,14 +9,24 @@
 
 /* 예약하기 */
 .res_form_wrap {border-radius: 12px; background:#fff;margin-top: 20px;}
-.res_form_wrap .cont a {padding:0 20px;}
-.res_form_wrap .cont a {display:flex; align-items:center; height:54px;border-bottom:1px solid #efefef; box-sizing:border-box;}
+.res_form_wrap .cont > a {padding:0 20px;}
+.res_form_wrap .cont > a {display:flex; align-items:center; height:54px;border-bottom:1px solid #efefef; box-sizing:border-box;}
+.res_form_wrap .cont:nth-child(3) > a {border-bottom:0 none;}
 .res_form_wrap .btn{width:100%; height:56px;background:url('../img/common/btn_bg.jpg') no-repeat center ; color:#fff;font-weight: 700; border-radius: 0 0 12px 12px; }
-.res_form_wrap .cont a:before {content:''; display:inline-block; width:15px; height:15px;background-size: 15px; margin-right:10px}
-.res_form_wrap .ico_place:before{background:url(../img/common/ico_place_20x20.png) center / 20px;}
-.res_form_wrap .ico_date:before {background:url(../img/common/ico_date_20x20.png) center / 20px;}
-.res_form_wrap .ico_car:before  {background:url(../img/common/ico_car_20x20.png) center / 20px;}
+.res_form_wrap .cont >  a:before {content:''; display:inline-block; width:15px; height:15px;background-size: 15px; margin-right:10px}
+.res_form_wrap .ico_place:before{background:url(../img/common/ico_place_20x20.png) no-repeat center / 20px;}
+.res_form_wrap .ico_date:before {background:url(../img/common/ico_date_20x20.png) no-repeat center / 20px;}
+.res_form_wrap .ico_car:before  {background:url(../img/common/ico_car_20x20.png) no-repeat center / 20px;}
+.res_form_wrap i {display:block; width:20px; height:20px; margin-left:auto; cursor: pointer; z-index: 1;}
+.res_form_wrap .ico_reset{width:35px; height:54px; background-position:right ;}
 
+
+.ico_select {background: url(../img/common/ico_chevronD_16x16.png) no-repeat center / 20px;}
+.ico_reset {background: url(../img/common/ico_reset_22x22.png) no-repeat center / 22px;}
+
+.res_form_wrap .carousel{padding:0 20px; margin-bottom:27px}
+.res_form_wrap .carousel .btn_option_wrap li > a{font-size:12px; background:#fff; border: 1px solid #D4D7DC; border-radius:8px }
+.res_form_wrap .carousel .btn_option_wrap li.on > a{border-color: #50555C;  color:#2E3033}
 /* 예약리스트 */
 .res_list_wrap { margin-top:160px}
 .res_list_wrap .list {position:relative;height:48px; background:#fff; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08); border-radius: 24px; padding-left:100px;}

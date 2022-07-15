@@ -254,6 +254,14 @@ border-radius: 8px;}
 .btn_group.multy .btn:first-child{margin-right: 10px;}
 .btn_group.multy.type01 .btn:first-child{width:50%}
 
+.btn_option_wrap {display:flex; }
+.btn_option_wrap li {margin-right:5px}
+.btn_option_wrap li:last-child {margin-right:0}
+.btn_option_wrap li > a{display:flex; align-items: center; height:44px; padding:0 10px; text-align:center; font-size:14px; background: #F7F7F9;border: 1px solid #ECEEF0;border-radius: 12px;}
+.btn_option_wrap li.on >  a {font-weight:700; color: #50555C;background:#fff;border: 1px solid #50555C;}
+.btn_option_wrap.small li >  a{height:34px;}
+
+
 /* 탭 */
 .tab_wrap{padding: 0 20px;}
 .tab_wrap .basic_tab{display: flex; flex-wrap: wrap; flex-grow: 1; }
