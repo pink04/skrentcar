@@ -27,3 +27,5 @@
 .fix_menu ul:first-child{border-top:none}
 .fix_menu li{width:auto;display: inline-block;}
 .fix_menu li a{padding:0 10px;font-size:15px;}
+
+.btn_group a{margin-bottom:10px}
