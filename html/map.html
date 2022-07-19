@@ -429,7 +429,7 @@ tr.border td {border-top:2px solid #ddd}
 <script>
   //스위치
   $('.layout td > a').click(function () {
-    $('a[target="iframe_a"]').css('color','inherit')
+    $('a[target="iframe_a"], a[target="_blank"]').css('color','inherit')
     $(this).css('color','red');
   });
 
