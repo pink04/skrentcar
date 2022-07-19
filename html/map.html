@@ -431,5 +431,13 @@ tr.border td {border-top:2px solid #ddd}
 	<iframe src="MAIN.html" frameborder="0" name="iframe_a"></iframe>
 </div>
 </div>
+<script>
+  //스위치
+  $('.layout td > a').click(function () {
+    $('a[target="iframe_a"]').css('color','inherit')
+    $(this).css('color','red');
+  });
+
+</script>
 </body>
 </html>

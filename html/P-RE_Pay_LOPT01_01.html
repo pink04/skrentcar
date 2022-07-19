@@ -32,12 +32,12 @@
               <span></span>
             </button>
           </div>
-          <div class="form_row">
+          <div class="form_row in_btn">
             <!-- 스위치 on일경우, 활성화 -->
-            <div class="w_box">
-              <input id="addr" type="text" value="AA12345678" placeholder="">
-              <a href="#" class="btn_coupon">쿠폰받기</a>
-            </div>
+            <span>
+                <input id="adress" type="text" value="AA12345678" placeholder="">
+            </span>
+            <a href="" class="btn">쿠폰받기</a>
           </div>
         </div>
         <!-- e : 쿠폰코드가 있으신가요? -->
@@ -74,7 +74,7 @@
   //쿠폰코드 추가
   $('.coupon_serch .push_toggle').click(function () {
   if ($(this).hasClass('on')) {
-    $('.coupon_wrap .form_row').fadeIn(200);
+    $('.coupon_wrap .form_row').fadeIn(200).css('display', 'flex');
   }else {
     $('.coupon_wrap .form_row').hide();
   }
