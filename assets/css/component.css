@@ -46,8 +46,8 @@
 
 .push_toggle {right: 0; width:60px; height:32px; border-radius:16px; background:#ECEEF0; border: 1px solid #D4D7DC; -webkit-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out; }
 .push_toggle span{position:absolute; top: 3px; left: 3px; width: 24px; height: 24px; background:#fff; border: 1px solid #D4D7DC; border-radius: 100%; -webkit-transition:all 0.3s ease-in-out; transition:all 0.3s ease-in-out;}
-.push_toggle.on {background:#FA4E29;}
-.push_toggle.on span {left: 32px;}
+.push_toggle.on {background:#FA4E29; border-color: #FA4E29; }
+.push_toggle.on span {left: 32px; border-color: #FFF;}
 
 .add_list li.active {height: auto; border-color: #50555C; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);}
 .item_wrap {min-height: 48px; padding: 20px 0; border-top: 1px solid #ECEEF0; border-bottom: 1px solid #ECEEF0;}
@@ -249,15 +249,17 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .pay_policy a strong {display: block; font-weight: 700; color: #2E3033;}
 .pay_policy a span {display: block; font-size: 12px; line-height: 18px;color: #858B93;}
 
-.pay_chk_wrap {padding: 0 4px;}
-.pay_agree_list li::after {display: block; content: ''; clear: both;}
-.pay_agree_list li .chk_box {float: left;}
-.pay_agree_list li .chk_box label {padding: 8px 2px 8px 26px; font-size: 14px; line-height: 22px; color: #50555C;}
-.pay_chk_wrap .chk_box label:before {top: 50%; transform: translateY(-50%);}
-.total_chk label {font-size: 14px; font-weight: 700; line-height: 23px; color: #50555C;}
-.pay_agree_list li .view {float: right; margin-top: 8px;}
-.pay_agree_list li .view a {padding: 8px; font-size: 14px; line-height: 23px; color: #50555C; text-decoration: underline;}
-.pay_agree_txt {color: #50555C; text-align: center;}
+.agree_chk_wrap {padding: 0 4px;}
+.total_chk {padding-bottom: 8px; border-bottom: 1px solid #ECEEF0; margin-top: -6px;}
+.total_chk label {padding: 8px 2px 8px 26px; font-size: 14px; font-weight: 700; line-height: 23px; color: #50555C; position: relative; left: 6px;}
+.agree_list {padding: 12px 6px 14px;}
+.agree_list li::after {display: block; content: ''; clear: both;}
+.agree_list li .chk_box {float: left;}
+.agree_list li .chk_box label {padding: 8px 2px 8px 26px; font-size: 14px; line-height: 22px; color: #50555C;}
+.agree_chk_wrap .chk_box label:before {top: 10px;}
+.agree_list li .view {float: right;position: relative;right: -2px;}
+.agree_list li .view a {display: inline-block; padding: 8px; font-size: 14px; line-height: 22px; color: #50555C; text-decoration: underline;}
+.pay_agree_txt {padding-top: 7px; color: #50555C; text-align: center;}
 
 /*  팝업 - 쿠폰 */
 .layerPopup .coupon_wrap {padding: 32px 20px 40px;}
@@ -293,12 +295,13 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 
 
 /* 예약완료 */
-.result_wrap {height: calc(100vh - 48px); padding: 32px 20px 80px; text-align: center; box-sizing: border-box;}
+.result_wrap {padding: 32px 20px 80px; box-sizing: border-box; text-align: center;}
 .result_tit {padding: 0 0 40px;}
 .result_tit .tit {font-size: 20px; font-weight: 700; line-height: 30px; color: #2E3033;}
-.result_tit .tit::after {display: block; width: 240px; height: 240px; content: ''; background-repeat: no-repeat; background-position: center; background-size: 240px; margin: 8px auto 0;}
-.result_tit.res_end .tit::after {background-image: url(../img/contents/res_end_bg.png);}
+.result_tit .result_img {width: 240px; height: 240px; margin: 8px auto 0;}
+.result_tit .result_img img {width: 100%;}
 .result_tit .desc {font-size: 14px; line-height: 22px; color: #50555C;}
+.result_tit .tit + .desc {margin-top: 16px;}
 
 .result_box {display: flex; align-items: center; min-height: 94px; padding: 16px 10px; background: #FFF; border: 1px solid #D4D7DC; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04); border-radius: 12px; box-sizing: border-box; text-align: left;}
 .result_box .img {width: 100px; height: 44px; overflow: hidden;}
@@ -307,14 +310,65 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .result_box .txt strong {display: block; font-size: 14px; font-weight: 700; line-height: 22px;}
 .result_box .txt span {display: block; font-size: 12px; line-height: 18px; margin-top: 4px;}
 
-.result_link {display: block; font-size: 14px; line-height: 22px; color: #50555C;text-decoration: underline;  margin-top: 20px;}
+.result_link {display:inline-block; padding: 5px; font-size: 14px; line-height: 22px; color: #50555C;text-decoration: underline; margin-top: 15px; text-align: center;}
 
 /* 예약실패 */
-.result_tit.res_fail .tit::after {background-image: url(../img/contents/res_fail_bg.png);}
 .result_box .fail_txt {width: 100%; text-align: center; font-size: 16px; font-weight: 700; line-height: 24px; color: #F71010;}
-
-
 
 
 /************************************************************************************/
 
+
+/* 로그인 */
+.login_wrap {padding: 32px 32px 80px;}
+.login_tit {font-size: 20px; font-weight: 700; line-height: 30px; text-align: center;}
+.login_desc {font-size: 14px; line-height: 22px; color: #858B93; text-align: center; margin: 8px 0 40px;}
+.login_box .ico_wrap {top:16px}
+.login_box .form_row input {height: 56px; font-size: 18px; margin-top: 0;}
+.login_box .form_row + .form_row {margin-top: 12px;}
+.login_box .chk_box {margin: 11px 0 34px;}
+.login_box .chk_box label {padding: 2px 8px 2px 26px; font-size: 14px; line-height: 22px; color: #50555C;}
+.login_box .chk_box label:before {top: 3px;}
+
+.login_link {font-size: 0; margin: 8px 0 32px;}
+.login_link li {display: inline-block; width: 33.33%; text-align: center;}
+.login_link li a {position: relative; display: block; padding: 8px; font-size: 14px; line-height: 22px; color: #50555C;}
+.login_link li a::before {position: absolute; left: 0; top: 50%; transform: translateY(-50%); display: inline-block; content: ''; width: 1px; height: 12px; background: #ECEEF0;}
+.login_link li:first-child a::before {display: none;}
+
+.login_wrap .login_easy {text-align: right; width: auto;}
+.login_easy .btn {background-repeat: no-repeat; background-position: 20px center; background-size: 40px; color: #FFF;}
+.login_easy .btn + .btn {margin-top: 12px;}
+.btn.btn_kakao {background-image: url(../img/contents/ico_login_kakao.png); background-color: #FEE500; color: #2E3033;}
+.btn.btn_naver {background-image: url(../img/contents/ico_login_naver.png); background-color: #2DB400;}
+.btn.btn_google {background-image: url(../img/contents/ico_login_google.png); background-color: #7A99BE;}
+.btn.btn_apple {background-image: url(../img/contents/ico_login_apple.png); background-color: #333;}
+
+.login_easy .link {display: inline-block; padding: 8px 24px 8px 8px; font-size: 14px; line-height: 22px; color: #50555C; background: url(../img/contents/ico_login_right.png) no-repeat right center; background-size: 16px;}
+
+/* 팝업 - 간편로그인 */
+.btnPop .layerPopup_heading {border-bottom: 0;}
+.btnPop .layerPopup_content {padding: 0 20px 34px;}
+
+/* 회원가입 */
+.joinPop .layerPopup_content {padding: 32px 20px 40px;} 
+.joinPop .join_box {padding-top: 14px;}
+
+.res_tit.bg04 {background-image: url(../img/contents/join_bg.png);}
+
+/* 아이디찾기 */
+.id_list li {text-align: left;}
+.id_list li + li {margin-top: 12px;}
+.id_list li a {display: block; padding: 16px; background: #FFF; border: 1px solid #D4D7DC; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.02); border-radius: 12px; box-sizing: border-box;}
+.id_list li a .icon {display: inline-block; width: 40px; height: 40px;}
+.id_list li a .icon img {width: 100%;}
+.id_list li a .txt {display: inline-block; padding-left: 11px;}
+.id_list li a .txt strong {display: block; font-size: 14px; font-weight: 700; line-height: 22px;}
+.id_list li a .txt span {display: block; font-size: 12px; line-height: 18px;}
+
+.consult_box {padding: 24px; background: #FFF; border: 1px solid #D4D7DC; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.02); border-radius: 12px; box-sizing: border-box; text-align: left;}
+.consult_box .tit {font-weight: 700; line-height: 24px; margin-bottom: 17px;}
+.consult_list li + li {margin-top: 8px;}
+.consult_list li dl {display: table; font-size: 14px; line-height: 22px;}
+.consult_list li dl dt {display: table-cell; padding-left: 26px; background: url(../img/contents/ico_consult.png) no-repeat left center; background-size: 20px; font-weight: 700;}
+.consult_list li dl dd {display: table-cell; color:#50555C; padding-left: 8px;}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>SK렌터카</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- s: header -->
+      <header class="header">
+        <div class="nav_wrap">
+          <a href="#" class="ico_back">
+            <span class="blind">뒤로가기</span>
+          </a>
+          <h2>회원가입</h2>
+        </div>
+      </header>
+      <!-- e: header -->
+      <!-- s : sub_wrap -->
+      <div class="sub_wrap">
+        <!-- s : 기본정보 -->
+        <div class="sub_cont">
+          <div class="res_tit bg04">
+            <p class="tit">SK렌터카 회원가입<br> 시작해 볼까요?</p>
+            <p class="desc">빠른예약이 가능해요!</p>
+          </div>
+          <div class="sub_tit">
+            <h3>기본정보 </h3>
+          </div>
+          <div class="info_box">
+            <div class="form_row">
+              <label for="name" class="form_label">이름</label>
+              <input id="name" type="text" value="" placeholder="이름을 입력해주세요">
+            </div>
+            
+            <div class="form_row addr">
+              <label for="adress" class="form_label">주소</label>
+              <div class="w_box">    
+                <div>   
+                    <input id="adress" type="text" value="" placeholder="우편번호">
+                </div>
+                <div>
+                  <a href="javascript:avoid(0)" class="btn">주소검색</a>
+                </div>
+              </div>
+                <div class="valid_box">
+                    <p class="txt">주소를 입력해주세요</p>
+                </div>
+                <input type="text" disabled="">
+                <input type="text" disabled="">
+              </div>
+          </div>
+        </div>
+        <!-- e : 기본정보 -->
+        <!--  s : 운전면허 정보 -->
+        <div class="sub_cont">
+          <div class="sub_tit">
+            <h3>운전면허 정보</h3>
+          </div>
+          <div class="license_img">
+            <img src="../assets/img/contents/img_license.png" alt="운전면허증예시">
+          </div>
+          <div class="licence_btn">
+            <a href="#" class="btn_license">운전면허증 촬영하기</a>
+          </div>
+          <div class="info_box">
+            <div class="form_row select_box">
+              <label class="form_label">면허종류</label>
+              <select>
+                <option value="">면허종류를 선택해주세요</option>
+                <option value="">옵션1</option>
+                <option value="">옵션2</option>
+                <option value="">옵션3</option>
+                <option value="">옵션4</option>
+              </select>
+            </div>
+            <div class="form_row">
+              <label for="number" class="form_label">면허번호</label>
+              <input id="number" type="text" value="" placeholder="면허번호를 입력해주세요">
+              <div class="ex_box">
+                <p class="txt">구면허증) 서울-01-123456-00 → 0112345600</p>
+                <p class="txt">신면허증) 11-01-123456-00 → 110112345600</p>
+              </div>
+            </div>
+            <div class="form_row">
+              <label for="exDate" class="form_label">만료일자</label>
+              <input id="exDate" type="tel" value="" placeholder="예) 20251231">
+            </div>
+            <div class="form_row">
+              <label for="isDate" class="form_label">발급일자</label>
+              <input id="isDate" type="tel" value="" placeholder="예) 20210101">
+            </div>
+          </div>
+        </div>
+        <!--  e : 운전면허 정보 -->
+      </div>
+      <!-- e : sub_wrap -->
+    </div>
+  </body>
+</html>
