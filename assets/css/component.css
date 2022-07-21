@@ -256,7 +256,7 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .agree_list li::after {display: block; content: ''; clear: both;}
 .agree_list li .chk_box {float: left;}
 .agree_list li .chk_box label {padding: 8px 2px 8px 26px; font-size: 14px; line-height: 22px; color: #50555C;}
-.agree_chk_wrap .chk_box label:before {top: 10px;}
+.agree_chk_wrap .chk_box label:before,.agree_list .chk_box label:before {top: 10px;}
 .agree_list li .view {float: right;position: relative;right: -2px;}
 .agree_list li .view a {display: inline-block; padding: 8px; font-size: 14px; line-height: 22px; color: #50555C; text-decoration: underline;}
 .pay_agree_txt {padding-top: 7px; color: #50555C; text-align: center;}
@@ -351,7 +351,7 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .btnPop .layerPopup_content {padding: 0 20px 34px;}
 
 /* 회원가입 */
-.joinPop .layerPopup_content {padding: 32px 20px 40px;} 
+.joinPop .layerPopup_content {padding: 32px 20px 30px;} 
 .joinPop .join_box {padding-top: 14px;}
 
 .res_tit.bg04 {background-image: url(../img/contents/join_bg.png);}

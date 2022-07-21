@@ -70,7 +70,8 @@
           </div>
           <div class="w_box">
             <div class="form_row" style="width: 50%;">
-              <label for="cvc" class="form_label">CVC <a href="#" class="tip"><img src="../assets/img/contents/ico_tip.png" alt=""></a></label>
+              <label for="cvc" class="form_label">CVC <a href="#" class="tip"><img
+                    src="../assets/img/contents/ico_tip.png" alt=""></a></label>
               <input id="cvc" type="tel" value="" placeholder="">
             </div>
             <div class="form_row" style="width: 50%;">
@@ -84,11 +85,26 @@
             </div>
           </div>
         </div>
+        <ul class="agree_list"><!-- 07.21 khj 추가 -->
+          <li>
+            <span class="chk_box">
+              <input type="checkbox" id="cardAgree" name="ness">
+              <label for="cardAgree">카드사 개인정보 제3자 동의</label>
+            </span>
+            <span class="view"><a href="#">보기</a></span>
+          </li>
+        </ul>
       </div>
       <!-- e : 카드정보 -->
-      
     </div>
     <!-- e : sub_wrap -->
+    <div class="btn_group multy type01 b_fixed">
+      <a href="javascript:avoid(0)" class="btn type02">건너 뛰기</a>
+      <!-- 입력 전 -->
+      <a href="javascript:avoid(0)" class="btn type01 disabled">다음</a>
+      <!-- 입력 후 클래스 diabled 제거 -->
+      <!-- <a href="javascript:avoid(0)" class="btn type01">다음</a> -->
+    </div>
   </div>
 </body>
 

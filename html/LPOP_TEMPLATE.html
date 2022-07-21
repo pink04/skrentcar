@@ -13,6 +13,29 @@
   </head>
   <body>
 
+  <ul class="test_btn_list">
+      <li>
+          <div class="btn_group">
+              <button class="btn bottomLayerBtn">하단 레이어</button>
+          </div>
+      </li>
+      <li>
+          <div class="btn_group">
+              <button class="btn alertBtn">alert</button>
+          </div>
+      </li>
+      <li>
+          <div class="btn_group">
+              <button class="btn tooltipBtn">tooltip</button>
+          </div>
+      </li>
+      <li>
+          <div class="btn_group">
+              <button class="btn toastBtn">toast</button>
+          </div>
+      </li>
+  </ul>
+  <!-- 하단 레이어 -->
   <div class="layerPopup bottom large">
       <div class="layerPopup_wrap">
           <div class="layerPopup_heading">
@@ -31,5 +54,59 @@
           </div>
       </div>
   </div>
-  </body>
+  <!-- alert 레이어 -->
+   <div class="layerPopup alert">
+      <div class="layerPopup_wrap ">
+          <div class="layerPopup_content">
+            <img src="../assets/img/contents/ico_time.png"  class="img">
+            <p class="txt">예약이 곧 마감돼요</p>
+            <p class="desc">시간 내 완료해주세요</p>
+          </div>
+          <div class="layerPopup_bottom">
+              <div class="btn_group">
+                  <button class="btn type01 noraund">확인했어요</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- tooltip 레이어 -->
+  <div class="layerPopup tooltip">
+      <div class="layerPopup_wrap">
+          <div class="layerPopup_heading">
+              <a href="javascript:avoid(0)" class="btn_close">닫기</a>
+          </div>
+          <div class="layerPopup_content">
+            <em class="tit">[이벤트쿠폰] 5,000원 할인 쿠폰</em>
+            <p>
+              발급조건  ID당 하루 1장 <br>
+              발급기간  2022.06.30 ~ 2022.08.30 <br>
+              사용기간  발급 당일 사용 가능
+            </p>
+          </div>
+      </div>
+  </div>
+  <!-- toast -->
+  <div class="toastPopup">
+    <p class="cont">발급되었습니다. 결제 시 쿠폰을 적용해보세요</p>
+  </div>
+</body>
+  <script>
+    $('.layerPopup, .toastPopup').css('display','none')
+      $(".bottomLayerBtn").click(function() {
+           $(".layerPopup.bottom").css('display','flex')
+      });
+      $(".alertBtn").click(function() {
+           $(".layerPopup.alert").css('display','flex')
+      });
+      $(".tooltipBtn").click(function() {
+           $(".layerPopup.tooltip").css('display','flex')
+      });
+      $(".toastBtn").click(function() {
+           $('.toastPopup').fadeIn(400).delay(800).fadeOut(800); 
+      });
+       $(".btn_close").click(function() {
+           $(".layerPopup").hide();
+      });
+
+  </script>
 </html>
