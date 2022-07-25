@@ -298,7 +298,7 @@ border-radius: 8px; text-align:center}
 .tab_wrap .basic_tab.col_4 li{width: calc(100% / 4);}
 .tab_wrap .basic_tab li.on{border-bottom: 2px solid #212529;}
 .tab_wrap .basic_tab li a{width: 100%;display: block;padding: 6px 0; font-size:14px;line-height: 20px;text-align: center;box-sizing: border-box;color: #B5B9C0;}
-.tab_wrap .basic_tab li.on a{font-weight: 700;color: #50555C;}
+.tab_wrap .basic_tab li.on a{font-weight: 700;color: #2E3033;}
 .tab_wrap .basic_tab.type01{position:relative;}
 .tab_wrap .basic_tab.type01 li{margin:-1px 0 0 -1px;border-bottom: 1px solid #D4D7DC;}
 .tab_wrap .basic_tab.type01 li a{padding: 10px 0;}
