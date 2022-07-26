@@ -118,9 +118,9 @@ box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04);border-radius: 12px; padding:12px}
 
 /* SUB */
 .sub_wrap {position:relative;padding-bottom:80px}
-.sub_wrap .sub_cont {position:relative; padding: 40px 20px;}
+.sub_wrap .sub_cont {position:relative; padding: 40px 20px; background:#fff}
 .sub_wrap .sub_cont + .sub_cont {margin-top:10px}
-.sub_wrap .sub_cont + .sub_cont:before {content:''; position:absolute; top:-10px; left:0; right:0;display:block; width:100%; height:10px; background:#ECEEF0 }
+.sub_wrap .sub_cont + .sub_cont:before {content:''; position:absolute; top:-10px; left:0; right:0;display:block; width:100%; height:10px; background:#f7f7f9 }
 .sub_wrap .sub_cont .sub_tit {margin-bottom:20px;}
 .sub_wrap .sub_cont .sub_tit h3 {position:relative; display:inline-block;font-size: 16px;font-weight: 700; padding-left:4px}
 .sub_wrap .sub_cont .sub_tit h3.major:after {content:''; position:absolute;top: -1px;right: -8px; width:5px; height:5px;display:block;background: #FA4E29;border-radius: 4px;}
@@ -128,7 +128,7 @@ box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04);border-radius: 12px; padding:12px}
 
 /* SUB type01*/
 .sub_wrap.type01 {padding:32px 20px 80px 20px}
-.sub_wrap.type01 .sub_cont {padding:24px 20px;border: 1px solid #ECEEF0;box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04); border-radius: 12px;}
+.sub_wrap.type01 .sub_cont {padding:24px 20px;border: 1px solid #f7f7f9;box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04); border-radius: 12px;}
 
 /* Form */
 .check_group .flex_item{display: flex;width: 100%;justify-content: space-between;align-items: center;}
