@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <title>SK렌터카</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <!-- s : 팝업 - 쿠폰-->
+  <div class="layerPopup bottom large">
+    <div class="layerPopup_wrap">
+      <div class="layerPopup_heading">
+        <h2 class="heading">추가 할인 쿠폰</h2>
+        <p>SK렌터카 회원이라면 추가 할인을 받을 수 있어요</p>
+        <a href="javascript:avoid(0)" class="btn_close">닫기</a>
+      </div>
+      <div class="layerPopup_content coupon_wrap has_bg">
+        <!-- e : 쿠폰코드가 있으신가요? -->
+        <!-- s : 쿠폰목록 -->
+        <ul class="coupon_list">
+          <li class=""><!--  활성화 class="on" -->
+            <div class="fl border_cn">
+              <div class="tag">
+                <span>멤버십 쿠폰</span>
+              </div>
+              <strong>신규 회원 5% 할인</strong>
+              <div class="bottom_txt">
+                <span>50,000원 이상 대여 시 최대 10,000원</span>
+                <a href="" class="question_mark">
+                    <span class="blind">도움말</span>
+                </a>
+              </div>
+            </div>
+            <div class="fr">
+                <a href="" class="btn_down">다운로드</a>
+            </div>
+          </li>
+          <li>
+            <div class="fl">
+              <div class="tag">
+                <span>생일축하쿠폰</span>
+              </div>
+              <strong>전기차 10% 할인</strong>
+              <div class="bottom_txt">
+                <span>50,000원 이상 대여 시 최대 10,000원</span>
+                <a href="" class="question_mark">
+                    <span class="blind">도움말</span>
+                </a>
+              </div>
+            </div>
+            <div class="fr">
+                  <a href="" class="btn_down">다운로드</a>
+              </div>
+          </li>
+          <li>
+            <div class="fl">
+              <div class="tag">
+                <span>이벤트 쿠폰</span>
+              </div>
+              <strong>5,000원 할인</strong>
+              <div class="bottom_txt">
+                <span>100,000원 이상 대여 시</span>
+                <a href="" class="question_mark">
+                    <span class="blind">도움말</span>
+                </a>
+              </div>
+            </div>
+            <div class="fr">
+                <a href="" class="btn_down">다운로드</a>
+            </div>
+          </li>
+        </ul>
+        <!-- e : 쿠폰목록 -->
+      </div>
+      <div class="layerPopup_bottom">
+        <div class="btn_group">
+          <!-- 비활성화 <a href="javascript:avoid(0)" class="btn disabled">쿠폰을 선택해주세요</a> -->
+          <a href="javascript:avoid(0)" class="btn type01">전체받기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- e : 팝업 - 쿠폰 -->
+</body>
+
+</html>
+
+<script>
+  //스위치
+  $('.push_toggle').click(function () {
+    if ($(this).hasClass('on') == true) {
+      $(this).removeClass('on');
+      $(this).addClass('off');
+    } else {
+      $(this).removeClass('off');
+      $(this).addClass('on');
+    }
+  });
+
+  //쿠폰코드 추가
+  $('.coupon_serch .push_toggle').click(function () {
+  if ($(this).hasClass('on')) {
+    $('.coupon_wrap .form_row').fadeIn(200).css('display', 'flex');
+  }else {
+    $('.coupon_wrap .form_row').hide();
+  }
+  });
+
+</script>
