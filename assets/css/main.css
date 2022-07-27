@@ -148,7 +148,7 @@
 .spot_text_sb{margin-top: 16px;}
 .spot_text_sb ul li{display: flex; justify-content: space-between; margin-bottom: 20px;}
 .spot_text_sb ul li:last-child{margin-bottom: 0;}
-.spot_text_sb ul li .left_txt p{font-size: 12px; font-weight: 700; color: #858B93;}
+.spot_text_sb ul li .left_txt p{font-size: 12px; font-weight: 700; color: #858B93; margin-bottom:5px}
 .spot_text_sb ul li .left_txt span{display: block; font-size: 14px; color: #2E3033;}
 .spot_text_sb ul li .left_txt em{color: #50555C; display: inline-block; padding-left: 8px;}
 .spot_text_sb ul li .right_btn a{display: inline-block; padding: 6px 10px; height: 30px; background: #F7F7F9; border: 1px solid #ECEEF0; border-radius: 12px; font-size: 12px; font-weight: 700;color: #858B93;}
@@ -195,24 +195,6 @@
 .navi_rtext::before{content: ''; display: inline-block; width: 15px; height: 15px;}
 .ico_map_org::before{background: url(../img/contents/ico_map_org.png)no-repeat center/ 16px;}
 .ico_train_org::before{background: url(../img/contents/ico_train_org.png)no-repeat center/ 16px;}
-
-/* 차량목록 */
-.day_selbox .day_wrap{position: relative; height: 70px; background-color: #fff;}
-.left_years{position: absolute; left: 0; bottom: 0;}
-.left_years a{display: flex; background-color: #fff; flex-direction: column; padding: 10.5px 8.08px 16.5px 24.06px;}
-.left_years a .month_txt{position: relative; display: block; width: 41.88px; padding-left: 2.12px; font-size: 32px; font-family: 'Noto Sans KR'; font-weight: 500; font-style: normal;}
-.left_years a .month_txt::after{position: absolute; content: ""; right: 5.83px; top: 13.33px; width: 8.33px; height: 4.17px; background: url(../img/common/ico_month_arrow.png)no-repeat center;}
-.left_years a .year_txt{display: block; font-size: 12px; font-weight: 400; text-align: left; font-family: 'Pretendard';}
-.right_days{margin-left: 55px; padding: 12px 0 20px 0;}
-.right_days ul{display: flex; justify-content: space-between;}
-.right_days ul li a{width: 40px; height: 40px; text-align: center; display: flex; align-items: center; justify-content: center; flex-direction: column;}
-.day_active{background-color: #50555C; border-radius: 32px; position: relative; z-index: 3;}
-.day_active .day_name{color: #fff; font-family: 'Noto Sans KR'; font-weight: 400;}
-.day_active .day_num{color: #fff; font-family: 'Pretendard'; font-weight: 400;}
-.day_select{position: relative; background: #F7F7F9;}
-.day_select::after{position: absolute; content: ""; left: -20px; width: 50%; height: 40px; top: 0; background: #F7F7F9; display: block;}
-.right_days ul li .day_name{font-size: 10px; height: 10px; line-height: 11px;}
-.right_days ul li .day_num{font-size: 14px; display: inline-block; height: 22px; line-height: 22px;}
 
 
 /* 팝업 캘린더 */

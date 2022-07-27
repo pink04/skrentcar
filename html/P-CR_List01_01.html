@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>SK렌터카</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- s: header -->
+      <header class="header">
+        <div class="nav_wrap">
+          <a href="#" class="ico_back">
+            <span class="blind">뒤로가기</span>
+          </a>
+        </div>
+        <div class="sch_wrap sch_on">
+          <input id="serch" name="serch" type="serch" value="" placeholder="인천공항2여객터미널 (2일 6시간 30분)">
+        </div>
+        <div class="side_menu">
+          <a href="#" class="ico_menu">
+            <span class="blind">메뉴</span>
+          </a>
+        </div>
+      </header>
+      <!-- e: header -->
+      <!-- s: days -->
+      <div class="day_selbox">
+        <div class="day_wrap">
+          <div class="left_years">
+            <a href="">
+              <span class="month_txt">4</span>
+              <em class="year_txt">2022</em>
+            </a>
+          </div>
+          <!-- s: 한줄 달력 -->
+          <div class="right_days">
+            <table class="cal_one">
+              <tbody>
+                <tr>
+                  <td>
+                    <em>목</em>
+                    <span>14</span>
+                  </td>
+                  <td class="checked rent">
+                    <em>금</em>
+                    <span>15</span>
+                  </td>
+                  <td class="middle">
+                    <em>토</em>
+                    <span>16</span>
+                  </td>
+                  <td class="checked return">
+                    <em>일</em>
+                    <span>17</span>
+                  </td>
+                  <td>
+                    <em>월</em>
+                    <span>18</span>
+                  </td>
+                  <td>
+                    <em>화</em>
+                    <span>19</span>
+                  </td>
+                  <td>
+                    <em>목</em>
+                    <span>21</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- e: 한줄 달력 -->
+        </div>
+      </div>
+      <!-- e: days -->
+      <div class="sub_wrap">
+        <div class="car_list_group">
+          <!-- s: 상단 셀렉트 버튼 -->
+          <div class="top_select_menu">
+            <div class="top_select_wrap">
+              <div class="left_selects">
+                <ul>
+                  <li>
+                    <select name='theme' class="car_select">
+                      <option value='' selected>테마</option>
+                      <option value=''>00000000000</option>
+                      <option value=''>00000000000</option>
+                      <option value=''>0000000000000</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name='car type' class="car_select">
+                      <option value='' selected>차종</option>
+                      <option value=''>00000000000</option>
+                      <option value=''>00000000000</option>
+                      <option value=''>0000000000000</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name='fuel' class="car_select">
+                      <option value='' selected>연료</option>
+                      <option value=''>00000000000</option>
+                      <option value=''>00000000000</option>
+                      <option value=''>0000000000000</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select name='option' class="car_select">
+                      <option value='' selected>옵션</option>
+                      <option value=''>00000000000</option>
+                      <option value=''>00000000000</option>
+                      <option value=''>0000000000000</option>
+                    </select>
+                  </li>
+                </ul>
+              </div>
+              <div class="right_option on">
+                <!-- on클래스 들어가면 글씨 나타남 -->
+                <a href="" class="ico_filter">
+                  <span class="filter_txt">2</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- e: 상단 셀렉트 버튼 -->
+          <!-- s: 조건 버튼 -->
+          <!--
+            펼침 : on 추가 class="fillter_wrap on"
+          -->
+          <div class="fillter_wrap">
+            <ul>
+              <li>
+                <a href="">
+                  <span>승용중형</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>EV</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>하이브리드</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>후방카메라</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>휘발유</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>블랙박스</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>네비게이션</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>승용중형</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>블랙박스</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>네비게이션</span>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <span>승용중형</span>
+                </a>
+              </li>
+            </ul>
+            <!-- 버튼 -->
+            <div class="btn_wrap">
+                <a href="" class="reset_btn">
+                  <span>전체초기화</span>
+                </a>
+                <a href="javascript:avoid(0)" class="arrow_btn">
+                  <span class="blind">열림닫힘 버튼</span>
+                </a>
+            </div>
+              <!-- //버튼 -->
+          </div>
+          <!-- e: 조건 버튼 -->
+          <!-- s: 추천리스트 영역-->
+          <div class="car_select_wrap">
+            <!-- s: 오른쪽 필터 선택 영역-->
+            <div class="right_filter">
+              <select name='filter option' class="car_select">
+                <option value='' selected>추천순</option>
+                <option value=''>00000000000</option>
+                <option value=''>00000000000</option>
+                <option value=''>0000000000000</option>
+              </select>
+            </div>
+            <!-- e: 오른쪽 필터 선택 영역-->
+            <!-- s: 차량 선택 영역-->
+            <div class="car_sel_wrap">
+              <!-- s: 타임딜 특가 메인-->
+              <div class="time_dill_box">
+                <div class="dill_box_wrap">
+                  <a href="" class="time_dill_link">
+                    <div class="left">
+                      <div class="left_cont">
+                        <div class="time_title_box">
+                          <p>타임딜 특가</p>
+                          <span>04:22:56</span>
+                        </div>
+                        <div class="bottom_price">
+                          <div class="price_name">
+                            <p>기아 EV6</p>
+                          </div>
+                          <div class="price_num">
+                            <em class="price">169,090원</em>
+                            <span class="price_regular">271,816원</span>
+                            <span class="rate">80%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right_cont">
+                        <img src="../assets/img/temp/@EV6_full.png" alt="차량이미지">
+                      </div>
+                    </div>
+                    <div class="dill_page">
+                      <dl>
+                        <dt class="blind">페이지 순서</dt>
+                        <dd>
+                          <span class="current">1</span>
+                          <span class="line">/</span>
+                          <span class="total">3</span>
+                        </dd>
+                      </dl>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- e: 타임딜 특가 메인-->
+              <div class="dill_box_type">
+                <div class="dill_box_wrap">
+                  <div class="top_cont">
+                    <div class="main_ctext">
+                      <p class="car_logo hyun"></p>
+                      <span class="car_enter">현대</span>
+                      <em class="c_prd_name">쏘나타</em>
+                    </div>
+                    <div class="img_box">
+                      <img src="../assets/img/temp/@AvanteX3.png" alt="차량 이미지">
+                    </div>
+                  </div>
+                  <ul class="dill_list_box">
+                    <!-- s: 일반딜 가격 박스-->
+                    <li class="list_item">
+                      <a href="" class="dill_list">
+                        <div class="top_tag">
+                          <p class="teg_line">
+                            <span class="tag_og">BEST</span>
+                            <span class="tag_be">7월특가</span>
+                          </p>
+                          <em class="right_ogtxt">마감임박</em>
+                        </div>
+                        <div class="car_name">
+                          <p class="main_name">스마트스트림 가솔린 1.6 터보</p>
+                          <span class="sb_text">21~22년식 · 가솔린 · 5인승</span>
+                        </div>
+                        <div class="price_wrap">
+                          <div class="price_num">
+                            <span class="price_regular">271,816원</span>
+                            <em class="price">169,090원</em>
+                          </div>
+                          <div class="rate_box">
+                            <span class="price_txt time">타임딜 · 10%추가할인</span>
+                            <em class="rate">80%</em>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- e: 일반딜 가격 박스-->
+                    <!-- s: 일반딜 가격 박스-->
+                    <li class="list_item">
+                      <a href="" class="dill_list">
+                        <div class="car_name">
+                          <p class="main_name">스마트스트림 LPi 2.0</p>
+                          <span class="sb_text">21~22년식 · 가솔린 · 5인승 · 만 26세 이상</span>
+                          <em class="sied_num">7대 남음</em>
+                        </div>
+                        <div class="price_wrap">
+                          <div class="price_num">
+                            <span class="price_regular">271,816원</span>
+                            <em class="price">169,090원</em>
+                          </div>
+                          <div class="rate_box">
+                            <span class="price_txt">회원가</span>
+                            <em class="rate">50%</em>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- e: 일반딜 가격 박스-->
+                    <!-- s: 일반딜 가격 박스-->
+                    <li class="list_item">
+                      <a href="" class="dill_list">
+                        <div class="car_name">
+                          <p class="main_name">스마트스트림 가솔린 2.0</p>
+                          <span class="sb_text">21~22년식 · 가솔린 · 5인승</span>
+                          <em class="sied_num">4대 남음</em>
+                        </div>
+                        <div class="price_wrap">
+                          <div class="price_num">
+                            <span class="price_regular">271,816원</span>
+                            <em class="price">241,940원</em>
+                          </div>
+                          <div class="rate_box">
+                            <span class="price_txt">회원가</span>
+                            <em class="rate">50%</em>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- e: 일반딜 가격 박스-->
+                  </ul>
+                </div>
+              </div>
+              <div class="dill_box_type">
+                <div class="dill_box_wrap">
+                  <div class="top_cont">
+                    <div class="main_ctext">
+                      <p class="car_logo hyun"></p>
+                      <span class="car_enter">현대</span>
+                      <em class="c_prd_name">쏘나타</em>
+                    </div>
+                    <div class="img_box">
+                      <img src="../assets/img/temp/@AvanteX3.png" alt="차량 이미지">
+                    </div>
+                  </div>
+                  <ul class="dill_list_box">
+                    <!-- s: 일반딜 가격 박스-->
+                    <li class="list_item">
+                      <a href="" class="dill_list">
+                        <div class="car_name">
+                          <p class="main_name">트렌디 스마트스트림 G2.0</p>
+                          <span class="sb_text">21~22년식 · 가솔린 · 5인승 · 만 26세 이상</span>
+                          <em class="sied_num">4대 남음</em>
+                        </div>
+                        <div class="price_wrap">
+                          <div class="price_num">
+                            <span class="price_regular">271,816원</span>
+                            <em class="price">169,090원</em>
+                          </div>
+                          <div class="rate_box">
+                            <span class="price_txt">회원가</span>
+                            <em class="rate">50%</em>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- e: 일반딜 가격 박스-->
+                  </ul>
+                </div>
+              </div>
+              <div class="dill_box_type">
+                <div class="dill_box_wrap">
+                  <div class="top_cont">
+                    <div class="main_ctext">
+                      <p class="car_logo hyun"></p>
+                      <span class="car_enter">현대</span>
+                      <em class="c_prd_name">그랜저</em>
+                    </div>
+                    <div class="img_box">
+                      <img src="../assets/img/temp/@AvanteX3.png" alt="차량 이미지">
+                    </div>
+                  </div>
+                  <ul class="dill_list_box">
+                    <!-- s: 일반딜 가격 박스-->
+                    <li class="list_item">
+                      <a href="" class="dill_list">
+                        <div class="car_name">
+                          <p class="main_name">더 뉴 그랜저 2.5</p>
+                          <span class="sb_text">21~22년식 · 가솔린 · 5인승 · 만 26세 이상</span>
+                          <em class="sied_num">2대 남음</em>
+                        </div>
+                        <div class="price_wrap">
+                          <div class="price_num">
+                            <span class="price_regular">340,940원</span>
+                            <em class="price">241.940원</em>
+                          </div>
+                          <div class="rate_box">
+                            <span class="price_txt">회원가</span>
+                            <em class="rate">40%</em>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- e: 일반딜 가격 박스-->
+                  </ul>
+                </div>
+              </div>
+              <div class="dill_box_type">
+                <div class="dill_box_wrap">
+                  <div class="top_cont">
+                    <div class="main_ctext">
+                      <p class="car_logo kia"></p>
+                      <span class="car_enter">기아</span>
+                      <em class="c_prd_name">K5</em>
+                    </div>
+                    <div class="img_box">
+                      <img src="../assets/img/temp/@AvanteX3.png" alt="차량 이미지">
+                    </div>
+                  </div>
+                  <ul class="dill_list_box">
+                    <!-- s: 일반딜 가격 박스-->
+                    <li class="list_item">
+                      <a href="" class="dill_list">
+                        <div class="car_name">
+                          <p class="main_name">K5 트렌디 스마트스트림 G2.0</p>
+                          <span class="sb_text">21~22년식 · 가솔린 · 5인승</span>
+                          <em class="sied_num">2대 남음</em>
+                        </div>
+                        <div class="price_wrap">
+                          <div class="price_num">
+                            <span class="price_regular">271,816원</span>
+                            <em class="price">169.090원</em>
+                          </div>
+                          <div class="rate_box">
+                            <span class="price_txt">회원가</span>
+                            <em class="rate">40%</em>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- e: 일반딜 가격 박스-->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- s: 차량 선택 영역-->
+          </div>
+          <!-- e: 추천리스트 영역 -->
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $('.twin_item:odd').css('margin-left', '16px');
+        $('.fillter_wrap .arrow_btn').click(function(){
+          $(this).parents('.fillter_wrap').toggleClass('on');
+        });
+      });
+    </script>
+  </body>
+</html>
