@@ -119,8 +119,8 @@ box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04);border-radius: 12px; padding:12px}
 /* SUB */
 .sub_wrap {position:relative;padding-bottom:80px}
 .sub_wrap .sub_cont {position:relative; padding: 40px 20px;}
-.sub_wrap .sub_cont + .sub_cont {margin-top:10px}
-.sub_wrap .sub_cont + .sub_cont:before {content:''; position:absolute; top:-10px; left:0; right:0;display:block; width:100%; height:10px; background:#ECEEF0 }
+.sub_wrap .sub_cont + .sub_cont {margin-top:12px}
+.sub_wrap .sub_cont + .sub_cont:before {content:''; position:absolute; top:-10px; left:0; right:0;display:block; width:100%; height:10px; background:#ECEEF0;}
 .sub_wrap .sub_cont .sub_tit {margin-bottom:20px;}
 .sub_wrap .sub_cont .sub_tit.type01 {display:flex; justify-content: space-between;}
 .sub_wrap .sub_cont .sub_tit h3 {position:relative; display:inline-block;font-size: 16px;font-weight: 700; padding-left:4px}
@@ -129,8 +129,16 @@ box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04);border-radius: 12px; padding:12px}
 
 /* SUB type01*/
 .sub_wrap.type01 {padding:32px 20px 120px 20px}
-.sub_wrap.type01 .sub_cont {padding:24px 20px; background:#fff;border: 1px solid #f7f7f9;box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04); border-radius: 12px;}
+.sub_wrap.type01 .sub_cont {padding:24px 20px; background:#fff;border: 1px solid #ECEEF0; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04); border-radius: 12px;}
 .sub_wrap.type01 .sub_cont:last-child {margin-bottom:40px}
+.sub_wrap.type01 .sub_cont + .sub_cont:before {display: none;}
+
+/* SUB type02*/
+.sub_wrap.type02 {padding: 16px 20px 80px;}
+.sub_wrap.type02 .sub_cont {padding: 0; background:#fff; border-radius: 12px;/* 07.27 khj수정 */ }
+.sub_wrap.type02 .sub_cont + .sub_cont:before {display: none; }
+.sub_wrap.type02 .tab_wrap {padding: 0 4px;}
+
 /* Form */
 .check_group .flex_item{display: flex;width: 100%;justify-content: space-between;align-items: center;}
 .check_group .flex_item + .flex_item{margin-top: 10px;}
@@ -194,11 +202,12 @@ border-radius: 8px; text-align:center}
 .serch_wrap .form_row .btn_reset{width: 24px;height: 24px; display: block;position: absolute; top: 10px; right: 36px; background: url(../img/common/ico_clear_24x24.png) no-repeat center / 24px; margin-right:10px}
 
 /* select_box */
-.form_row.select_box label {position:absolute;top: -18px; left:0;color: #89909A;font-size: 14px;line-height: 18px;}
-.form_row.select_box label + select {margin-top:8px;}
-.form_row.select_box:after {content: "";position: absolute;z-index: 1;right: 15px;top:50%;width: 20px;height: 20px;margin-top: -5px; background: url(../img/common/ico_chevronD_16x16.png) no-repeat 0 0;background-size: 100% 100%; z-index:2}
-.form_row.select_box select {position: relative;display: block;width: 100%; height:48px; padding: 14px 32px 15px 15px;box-sizing: border-box;border: 1px solid #D4D7DC;z-index: 2;color: #212529;border-radius: 8px; background:#fff}
-.form_row.select_box select:focus {border: 1px solid #495057;outline: none;}
+.select_box {position: relative;}
+.select_box label {position:absolute;top: -18px; left:0;color: #89909A;font-size: 14px;line-height: 18px;}
+.select_box label + select {margin-top:8px;}
+.select_box:after {content: "";position: absolute;z-index: 1;right: 15px;top:50%;transform: translateY(-50%);width: 20px;height: 20px;background: url(../img/common/ico_chevronD_16x16.png) no-repeat 0 0;background-size: 100% 100%; z-index:2}
+.select_box select {position: relative;display: block;width: 100%; height:48px; padding: 14px 32px 15px 15px;box-sizing: border-box;border: 1px solid #D4D7DC;z-index: 2;color: #212529;border-radius: 8px; background:#fff}
+.select_box select:focus {border: 1px solid #495057;outline: none;}
 
 /* select_box */
 /* 07.20 khj 수정 */
@@ -294,22 +303,26 @@ border-radius: 8px; text-align:center}
 
 
 /* 탭 */
-.tab_wrap{padding: 0 20px;}
-.tab_wrap .basic_tab{display: flex; flex-wrap: wrap; flex-grow: 1; }
+.tab_wrap {padding: 0 20px;}
+.tab_wrap .basic_tab {display: flex; flex-wrap: wrap; flex-grow: 1; }
 .tab_wrap .basic_tab li{position: relative;box-sizing: border-box;margin:-1px 20px 0 -1px; overflow: hidden;}
 .tab_wrap .basic_tab li:last-child {margin-right:0}
 .tab_wrap .basic_tab.col_2 li{width: calc(100% / 2);}
 .tab_wrap .basic_tab.col_3 li{width: calc(100% / 3);}
 .tab_wrap .basic_tab.col_4 li{width: calc(100% / 4);}
-.tab_wrap .basic_tab li.on{border-bottom: 2px solid #212529;}
-.tab_wrap .basic_tab li a{width: 100%;display: block;padding: 6px 0; font-size:14px;line-height: 20px;text-align: center;box-sizing: border-box;color: #B5B9C0;}
-.tab_wrap .basic_tab li.on a{font-weight: 700;color: #2E3033;}
-.tab_wrap .basic_tab.type01{position:relative;}
-.tab_wrap .basic_tab.type01 li{margin:-1px 0 0 -1px;border-bottom: 1px solid #D4D7DC;}
-.tab_wrap .basic_tab.type01 li a{padding: 10px 0;}
-.tab_wrap .basic_tab.type01 li.on{ border-bottom-color: #FA4E29}
-.tab_wrap .basic_tab.type01:after{content:'';position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); display:block; width:16px; height:16px; background:url(../img/common/ico_chevronR_16x16.png) no-repeat center / 16px; }
 
+
+.tab_wrap .basic_tab li a {width: 100%; display: block; padding: 4px 0; font-size:14px; line-height: 22px; text-align: center; box-sizing: border-box; color: #858B93; /* 07.26 khj수정 */}
+.tab_wrap .basic_tab li.on a {font-weight: 700;color: #2E3033;}
+.tab_wrap .basic_tab li a::after {position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 100%; display: block; content: ''; border-bottom: 2px solid transparent;}
+.tab_wrap .basic_tab li.on a::after {border-bottom-color: #50555C;}
+
+.tab_wrap .basic_tab.type01 {position:relative;}
+.tab_wrap .basic_tab.type01 li {margin:-1px 0 0 -1px;}
+.tab_wrap .basic_tab.type01 li a {position: relative; padding: 10px 0;}
+.tab_wrap .basic_tab.type01 li a::after {bottom: 0.5px; border-bottom: 1px solid #D4D7DC;}
+.tab_wrap .basic_tab.type01 li.on a::after {bottom: 0; border-bottom: 2px solid #FA4E29;}
+.tab_wrap .basic_tab.type01:after {content:'';position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); display:block; width:16px; height:16px; background:url(../img/common/ico_chevronR_16x16.png) no-repeat center / 16px; }
 
 
 /* 레이어 팝업 */
@@ -416,7 +429,7 @@ border-radius: 8px; text-align:center}
 .form_row .w_box {display: flex; width: 100%;}
 .form_row .w_box > input + [class^="btn_"] {margin-left: 8px;}
 
-/* 07.20 khj추가 */
+
 .w_box {display: flex; width: 100%;}
 .w_box > div {position: relative;}
 .w_box > div + div {margin-left: 8px;}
@@ -431,3 +444,6 @@ border-radius: 8px; text-align:center}
 .addr .w_box > div:last-child {width: 100px;}
 .tip {display: inline-block; width: 16px; position: relative; top: -2px;}
 .tip img {width: 100%; vertical-align: middle;}
+
+.s_tit {padding-left: 4px; font-size: 14px; line-height: 22px; font-weight: 700; color: #2E3033; margin-bottom: 16px;}
+.s_desc {padding-left: 4px; font-size: 12px; line-height: 18px;color: #858B93; margin: -14px 0 16px;}

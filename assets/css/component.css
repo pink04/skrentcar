@@ -155,8 +155,8 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .layerPopup .li_tit,.layerPopup .p_txt {padding-left: 4px; font-size: 14px; line-height: 22px; color: #50555C; margin-top: 8px;}
 .layerPopup p.imp {text-indent: -24px; padding-left: 24px;}
 .layerPopup p.imp::before {display: inline-block; vertical-align: middle; width: 16px; height: 16px; content: ''; background: url(../img/contents/ico_imp.png) no-repeat center; background-size: 16px; margin: 0 4px; position: relative; top: -1px;}
-.layerPopup .dot_list li {padding-left: 4px; font-size: 14px; line-height: 22px; color: #50555C; margin-top: 4px;}
-.layerPopup .dot_list li::before {display: inline-block; vertical-align: middle; width: 3px; height: 3px; content: ''; background: #50555C; border-radius: 100%; margin-right: 4px;}
+.dot_list li {padding-left: 11px; text-indent: -11px; font-size: 14px; line-height: 22px; color: #50555C; margin-top: 4px;}
+.dot_list li::before {display: inline-block; vertical-align: middle; width: 3px; height: 3px; content: ''; background: #50555C; border-radius: 100%; margin: 0 4px 0 4px;/* 07.26 khj수정 */}
 
 /* 팝업 - 카시트 */
 .layerPopup .filter_wrap {font-size: 12px; line-height: 18px; margin-bottom: 12px;}
@@ -181,14 +181,15 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 
 /* 팝업 - 운전자정보_자세한자격조건 */
 .layerPopup .res_step.type {display: block; margin: 32px 0;}
-.layerPopup .res_step.type li {width: 100%; text-align: left;}
-.layerPopup .res_step.type li::after {position: static; display: block; content: ''; width: 24px; height: 24px; background: url(../img/contents/ico_step_down.png) no-repeat; background-size: 24px; background-position: center; padding-left: 30px;}
+.layerPopup .res_step.type li {width: 100%; text-align: left; margin: 0;}
+.layerPopup .res_step.type li::after {position: static; display: block; content: ''; width: 24px; height: 24px; background: url(../img/contents/ico_step_down.png) no-repeat; background-size: 24px; background-position: center; padding-left: 30px ;margin: 8px 0;}
 .layerPopup .res_step.type li .ico {display: inline-block; vertical-align: middle; margin-right: 4px;}
 .layerPopup .res_step.type li .step01 {background-image: url(../img/contents/ico_step_ty01.png);}
 .layerPopup .res_step.type li .step02 {background-image: url(../img/contents/ico_step_ty02.png);}
 .layerPopup .res_step.type li .step03 {background-image: url(../img/contents/ico_step_ty03.png);}
 .layerPopup .res_step.type li .step04 {background-image: url(../img/contents/ico_step_ty04.png);}
 .layerPopup .res_step.type li .txt {display: inline-block; font-size: 14px; line-height: 20px; margin-top: 0;}
+
 
 /* 결제 */
 .sub_wrap.type01 .tit {padding-left: 4px; color: #858B93; margin-bottom: 16px;}
@@ -244,22 +245,19 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .pay_meth_list .sk_pay::before {background-image: url(../img/contents/ico_sk.png);}
 .pay_meth_list .chk_box > span em {font-size: 11px; font-weight: normal; line-height: 16px; color: #FA4E29; margin-left: 2px;}
 
-.pay_policy a {position: relative; display: block; padding: 24px 0;}
-.pay_policy a::after {position: absolute; top: 28px; right: 0; display: block; content: ''; width: 16px; height: 16px; background: url(../img/contents/ico_view_right.png) no-repeat center; background-size: 16px;}
-.pay_policy a strong {display: block; font-weight: 700; color: #2E3033;}
-.pay_policy a span {display: block; font-size: 12px; line-height: 18px;color: #858B93;}
+.pay_policy a p {margin: 0;}
+.pay_policy a .s_desc {margin-top: 2px;}
 
-.agree_chk_wrap {padding: 0 4px;}
-.total_chk {padding-bottom: 8px; border-bottom: 1px solid #ECEEF0; margin-top: -6px;}
+.total_chk {width: 100%;padding-bottom: 8px; border-bottom: 1px solid #ECEEF0; margin-top: -6px;}
 .total_chk label {padding: 8px 2px 8px 26px; font-size: 14px; font-weight: 700; line-height: 23px; color: #50555C; position: relative; left: 6px;}
 .agree_list {padding: 12px 6px 14px;}
 .agree_list li::after {display: block; content: ''; clear: both;}
 .agree_list li .chk_box {float: left;}
 .agree_list li .chk_box label {padding: 8px 2px 8px 26px; font-size: 14px; line-height: 22px; color: #50555C;}
 .agree_chk_wrap .chk_box label:before,.agree_list .chk_box label:before {top: 10px;}
-.agree_list li .view {float: right;position: relative;right: -2px;}
+.agree_list li .view {float: right;position: relative;right: -10px;}
 .agree_list li .view a {display: inline-block; padding: 8px; font-size: 14px; line-height: 22px; color: #50555C; text-decoration: underline;}
-.pay_agree_txt {padding-top: 7px; color: #50555C; text-align: center;}
+.pay_agree_txt {padding-top: 4px; color: #50555C; text-align: center;}
 
 /*  팝업 - 쿠폰 */
 .layerPopup .coupon_wrap {padding: 32px 20px 40px;}
@@ -374,6 +372,90 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .consult_list li dl dd {display: table-cell; color:#50555C; padding-left: 8px;}
 
 
+/* 이용안내 */
+.serch_cont {margin: 20px 0;}
+.serch_cont .form_row > .form_row {margin-top: 0;}
+.serch_cont > div + div {margin-top: 10px;}
+.serch_cont .w_box > div + div {margin-left: 10px;}
+.serch_cont .ex_txt {font-size: 12px; line-height: 18px; color: #50555C; margin-top: 12px;}
+
+.sub_tab {padding-bottom: 12px; overflow-x: auto;}
+.sub_tab ul {display: flex; padding: 0 4px;}
+.sub_tab li + li {margin-left: 4px;}
+.sub_tab li a {display: inline-block; min-width: 45px; height: 30px; padding: 0 10px; font-size: 12px; line-height: 29px; color: #50555C; background: #FFF; border: 1px solid #ECEEF0; border-radius: 12px; box-sizing: border-box; text-align: center;}
+.sub_tab li.on a {border-color: #50555C; font-weight: 700; color: #2E3033;}
+
+.use_info_wrap {padding: 20px;}
+.use_info_wrap + div {margin-top: 12px;}
+.use_info_wrap .title {padding-bottom: 14px; border-bottom: 1px solid #ECEEF0;}
+.use_info_wrap .title span {font-weight: 700; line-height: 24px;}
+.use_info_wrap .title i {display: inline-block; width: 20px; height: 20px; margin-right: 2px;}
+.use_info_wrap .title i img {width: 100%; vertical-align: middle; position: relative; top: -2px;}
+.use_info_wrap .title em {display: inline-block; min-width: 32px; height: 20px; padding: 0 6px; line-height: 20px; background: #FA4E29; border-radius: 6px; font-size: 11px; font-weight: 700; color: #FFF; text-align: center; position: relative; top: -1px; margin-left: 3px;}
+.use_info_wrap .list {display: flex; flex-wrap: wrap; padding-top: 20px; margin: -6px 0;}
+.use_info_wrap .list li {width: 50%;}
+.use_info_wrap .list li a {display: block; padding: 6px 0; font-size: 14px; line-height: 22px; color: #50555C;}
+
+.branch_serch {margin-top: 12px;}
+.total_count {padding-left: 4px;font-size: 12px; line-height: 18px; color: #50555C; margin-bottom: 8px;}
+.branch_wrap a {position: relative; display: block; padding: 16px 52px 16px 20px; border: 1px solid #ECEEF0; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.02); border-radius: 8px; overflow: hidden;}
+.branch_wrap a::after {position: absolute; right: 16px; top: 0; display: block; content: ''; width: 16px; height: 100%; background: url(../img/common/ico_chevronR_grey02_16x16.png) no-repeat center; background-size: 16px;}
+.branch_wrap p + p {margin-top: 2px;}
+.branch_wrap .tit {font-size: 14px; font-weight: 700; line-height: 22px;}
+.branch_wrap .txt {font-size: 12px; line-height: 18px; color: #858B93;}
+.no_data {padding-top: 120px; text-align: center;}
+.no_data dl dt {font-weight: 700; line-height: 24px;}
+.no_data dl dd {font-size: 14px; line-height: 22px; color: #50555C; margin-top: 8px;}
+
+.sub_wrap.type02 .tab_wrap + h3 {padding-top: 32px;}
+.con_tit {position: relative; margin-bottom: 16px; width: 100%; padding-left: 4px; font-weight: 700; font-size: 18px; line-height: 28px; color: #2E3033;}
+
+.bus_map {margin-bottom: 20px;}
+.bus_map img {width: 100%;}
+.bus_tab {display: flex;}
+.bus_tab li {flex-basis: 100%;}
+.bus_tab li + li {border-left: 1px solid #FFF;}
+.bus_tab li a {display: block; height: 44px; line-height: 44px; text-align: center; background: #858B93;}
+.bus_tab li a span {font-size: 14px; font-weight: 700; line-height: 22px; color: #FFF;}
+.bus_tab li a span::after {display: inline-block; vertical-align: middle; content: ''; width: 16px; height: 16px; background: url(../img/contents/ico_front.png) no-repeat center; background-size: 16px; margin: -2px 4px 0 8px;}
+.bus_tab li a span:last-child:after {display: none;}
+.bus_tab li.on a {background: #FA4E29;}
+
+.bus_slider {margin-bottom: 40px;}
+.bus_slider .carousel {display: flex;}
+.bus_slider .carousel li {margin-right: 16px;}
+.bus_slider .carousel .img_wrap {max-width: 280px; height: 140px; border-radius: 12px; overflow: hidden;}
+.bus_slider .cont_wrap {padding: 16px 4px 0;}
+.bus_slider .cont_wrap dl dt {font-size: 14px; font-weight: 700; line-height: 22px;}
+.bus_slider .cont_wrap dl dd {font-size: 14px; line-height: 22px; color: #50555C;}
+
+.bus_op_wrap {position: relative; padding: 24px 0 0; font-size: 14px; line-height: 22px; color: #50555C; border: 1px solid #ECEEF0; box-sizing: border-box;}
+.bus_op_step {display: flex; flex-wrap: wrap; padding: 0 10px;}
+.bus_op_step::after,.bus_op_txt::after {display: block; content: ''; width: 100%; height: 1px; background: #ECEEF0; margin: 28px auto;}
+.bus_op_step::after {width: calc(100% - 20px);}
+.bus_op_step li {position: relative; width: 33.33%; text-align: center;}
+.bus_op_step li::after {position: absolute; right: -8px; top: 24px; display: inline-block; content: ''; width: 16px; height: 16px; background: url(../img/common/ico_chevronR_grey_16x16.png) no-repeat; background-size: 16px; background-position: center;}
+.bus_op_step li:last-child:after {display: none !important;}
+.bus_op_step li .step01 {background-image: url(../img/contents/ico_bus_step01.png);}
+.bus_op_step li .step02 {background-image: url(../img/contents/ico_bus_step02.png);}
+.bus_op_step li .step03 {background-image: url(../img/contents/ico_bus_step03.png);}
+.bus_op_step li .ico {display: block; width: 64px; height: 64px; background-color: #F7F7F9; background-repeat: no-repeat; background-position: center; background-size: 24px; border-radius: 100%; margin: auto;}
+.bus_op_step li .txt {display: block; font-size: 12px; line-height: 18px; margin-top: 8px;}
+.bus_op_step li .txt dt {font-weight: 700;}
+.bus_op_step li .txt dd {margin-top: 4px;}
+
+.bus_op_txt {padding: 0 20px;}
+.bus_op_txt::after {margin: 32px auto 0;}
+.bus_op_txt .tit {font-weight: 700; color: #2E3033;}
+.bus_op_txt .tit i {display: inline-block; width: 16px; height: 16px; margin-right: 2px;}
+.bus_op_txt .tit i img {width: 100%; vertical-align: middle; position: relative; top: -1px;}
+.bus_op_txt ul li {color: #50555C;}
+
+.bus_op_btn { text-align: center;}
+.bus_op_btn a {display: block; padding: 12px 0 29px;}
+
+/* 팝업 - 셔틀버스시간표 */
+.time_table + .ex_txt {padding: 16px 24px 0 20px;}
 
 
 

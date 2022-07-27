@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <title>SK렌터카</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- s: header -->
+    <header class="header">
+      <div class="nav_wrap">
+        <a href="#" class="ico_back">
+          <span class="blind">뒤로가기</span>
+        </a>
+        <h2>지점안내</h2>
+      </div>
+      <div class="side_menu">
+        <a href="#" class="ico_menu"><span class="blind">메뉴</span></a>
+      </div>
+    </header>
+    <!-- e: header -->
+    <!-- s : sub_wrap -->
+    <div class="sub_wrap type02">
+      <!-- s : 지점안내(정비매장) -->
+      <div class="tab_wrap">
+        <ul class="basic_tab">
+          <li><a href="javascript:avoid(0)">단기렌터카</a></li>
+          <li><a href="javascript:avoid(0)">장기렌터카</a></li>
+          <li><a href="javascript:avoid(0)">제주</a></li>
+          <li class="on"><a href="javascript:avoid(0)">정비매장</a></li><!-- 활성화 class="on" -->
+        </ul>
+      </div>
+      <div class="serch_cont">
+        <div class="w_box">
+          <div class="select_box" style="width: 50%;">
+            <select>
+              <option value="">구분 전체</option>
+              <option value="">사고</option>
+              <option value="">일반 정비</option>
+            </select>
+          </div>
+          <div class="select_box" style="width: 50%;">
+            <select>
+              <option value="">전체</option>
+              <option value="">정비소명</option>
+              <option value="">지역명</option>
+            </select>
+          </div>
+        </div>
+        <div class="form_row serch_wrap">
+          <div class="form_row">
+            <input id="serch" name="serch" type="serch" value="" placeholder="지점명을 입력해주세요.">
+            <button class="btn_serch"><span class="blind">Search</span></button>
+          </div>
+        </div>
+        <p class="ex_txt">사고 협력점은 SK렌터카 사고 정비 부서의<br> 안내를 받아 입고 바랍니다.</p>
+      </div>
+
+      <div class="sub_tab">
+        <ul>
+          <li class="on"><a href="#">전체</a></li><!-- 활성화 class="on" -->
+          <li><a href="#">서울</a></li>
+          <li><a href="#">경기</a></li>
+          <li><a href="#">충청</a></li>
+          <li><a href="#">강원</a></li>
+          <li><a href="#">경상</a></li>
+          <li><a href="#">전라</a></li>
+          <li><a href="#">제주</a></li>
+        </ul>
+      </div>
+      <!-- s : branch_serch -->
+      <div class="branch_serch">
+        <div class="total_count">총 356건</div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="tit">가양지점</p>
+              <p class="txt">서울 강서구 양천로 564 (등촌동, 등촌동두산위브센티움) 등촌두산위브센티움 227호</p>
+              <p class="txt">02-3664-5200</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="tit">강동역지점</p>
+              <p class="txt">서울 강동구 천호대로 1116 (성내동, 라이저강동빌딩) 2층 209호</p>
+              <p class="txt">02-487-7878</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="tit">강릉지점</p>
+              <p class="txt">강원 강릉시 강릉대로 302 (옥천동) 1층</p>
+              <p class="txt">033-643-1600</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="tit">건대지점</p>
+              <p class="txt">서울 광진구 아차산로 272 (자양동, 더샵스타시티) 이마트자양점 주차장 지하3층 H라인</p>
+              <p class="txt">02-446-0013</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="tit">경산지점</p>
+              <p class="txt">경북 경산시 대학로 104 (중방동) 현대자동차건물 5층</p>
+              <p class="txt">02-3664-5200</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="tit">경주지점</p>
+              <p class="txt">경상북도 경주시 신경주역로 80 (건천읍, 신경주KTX역사)</p>
+              <p class="txt">054-748-6664</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- s : 검색결과 없음 -->
+        <!-- <div class="no_data">
+          <dl>
+            <dt>검색결과가 없습니다</dt>
+            <dd>지점명을 수정하거나 지역을<br>
+              다시 선택해보세요</dd>
+          </dl>
+        </div> -->
+      </div>
+      <!-- e : 검색결과 없음 -->
+      <!-- e : branch_serch -->
+      <!-- e : 지점안내(정비매장) -->
+    </div>
+  </div>
+  <!-- e : sub_wrap -->
+  </div>
+</body>
+
+</html>
