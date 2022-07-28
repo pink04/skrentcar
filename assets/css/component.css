@@ -245,6 +245,8 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 .pay_meth_list .sk_pay::before {background-image: url(../img/contents/ico_sk.png);}
 .pay_meth_list .chk_box > span em {font-size: 11px; font-weight: normal; line-height: 16px; color: #FA4E29; margin-left: 2px;}
 
+.pay_policy a {position: relative; display: block; padding: 24px 0;}
+.pay_policy a::after {position: absolute; top: 28px; right: 0; display: block; content: ''; width: 16px; height: 16px; background: url(../img/common/ico_chevronR_16x16.png) no-repeat center; background-size: 16px;}
 .pay_policy a p {margin: 0;}
 .pay_policy a .s_desc {margin-top: 2px;}
 
