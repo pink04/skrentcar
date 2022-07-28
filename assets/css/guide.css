@@ -1,6 +1,7 @@
 .wrap.layout{
   padding: 0 20px;
   box-sizing: border-box;
+  background:#fff;
 }
 .wrap.layout h1{
     margin: 20px 0;

@@ -163,7 +163,7 @@ box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04);border-radius: 12px; padding:12px}
 .form_row input[type="text"] + .ico_wrap .btn_reset{width: 24px;height: 24px; display: block; background: url(../img/common/ico_clear_24x24.png) no-repeat center / 24px; }
 .form_row + .form_row.form_split { border-top: 1px solid #D4D7DC; padding-top: 15px; }
 .form_row + .btn_group.form_row{margin-top: 15px !important}
-.form_row > label,.form_row.in_btn span > label {position:absolute;top: -18px; left:0;color: #89909A;font-size: 14px;line-height: 18px;}
+.form_row > label,.form_row.in_btn span > label {position:absolute;top: -18px; left:0;color: #89909A;font-size:12px; font-weight:700;line-height: 18px;}
 .form_row > label.required::after{content: "*"; font-size: 12px; line-height: 18px; color: #eb1515;}
 .form_row label + input, .form_row label + textarea, .form_row label + select {margin-top: 8px;}
 .form_row input {height: 48px;display: block;box-sizing: border-box;width: 100%;border: 1px solid #D4D7DC;border-radius: 8px;}
@@ -201,13 +201,8 @@ border-radius: 8px; text-align:center}
 .serch_wrap .form_row .btn_reset{width: 24px;height: 24px; display: block;position: absolute; top: 10px; right: 36px; background: url(../img/common/ico_clear_24x24.png) no-repeat center / 24px; margin-right:10px}
 
 /* select_box */
-/* 07.20 khj 수정 */
-.select_box {position: relative;}
-.select_box label {position:absolute;top: -18px; left:0;color: #89909A;font-size: 14px;line-height: 18px;}
-.select_box label + select {margin-top:8px;}
 .select_box select {position: relative;display: block;width: 100%; height:48px; padding: 14px 32px 15px 15px;box-sizing: border-box;border: 1px solid #D4D7DC;z-index: 2;color: #212529;border-radius: 8px; background:#fff url(../img/common/ico_chevronD_16x16.png) no-repeat center right 15px / 20px}
 .select_box select:focus {border: 1px solid #495057;outline: none;}
-/* //07.20 khj 수정 */
 
 /* valid txt*/
 .form_row .valid_box {overflow: hidden;padding: 5px 0 0 0;}
@@ -227,8 +222,8 @@ border-radius: 8px; text-align:center}
 .chk_box input[type="radio"]:checked + label::before,.chk_box input[type="radio"]:checked ~ label::before,.chk_box input[type="radio"]:disabled + label:before{width: 22px; height:22px; background: #6c747b;}
 .chk_box input[type="radio"]:checked + label::after, .chk_box input[type="radio"]:checked ~ label::after{content:"";width: 10px;height: 10px;display: block;position: absolute;top: 6px;left: 6px;background: #fff;background-size: 8px 8px;border-radius: 50%;z-index: 10;}
 .chk_box input[type="radio"]:disabled + label:before,
-.chk_box input[type="checkbox"]:disabled + label:before{background:#F1F3F5} 
-.chk_box input[type="radio"]:disabled + label:after{display:none} 
+.chk_box input[type="checkbox"]:disabled + label:before{background:#F1F3F5}
+.chk_box input[type="radio"]:disabled + label:after{display:none}
 
 .chk_box.type_btn{width: 100%; display: block; position: relative;}
 .chk_box.type_btn input{display: none;}
@@ -258,8 +253,7 @@ border-radius: 8px; text-align:center}
 .btn_group .btn{display:block; box-sizing:border-box;width:100%; height:56px; font-size:16px; font-weight:700;  text-align: center;line-height: 56px;background:#fff;  border-radius: 12px; }
 .btn_group .btn.type01{background:url('../img/common/btn_bg.jpg') no-repeat center / cover ; color:#fff; z-index:1}
 .btn_group .btn.type02{background: #ECEEF0;border: 1px solid #E3E6EC;color: #858B93;}
-.btn_group .btn.reset{position: relative; background: #ECEEF0; border: 1px solid #E3E6EC; color: #858B93;}
-.btn_group .btn.reset::before{content: ''; display: inline-block; width: 24px; height: 24px; margin-left: 4px; } 
+.btn_group .btn.reset{position: relative; background: #ECEEF0; border: 1px solid #E3E6EC; color: #858B93; padding-left:10px;}
 .btn_group .btn.reset::after{position: absolute; left: 16px; top: 16px; content: ''; width: 24px; height: 24px; background: url(../img/common/ico_reset_24x24.png) no-repeat center; background-size: 24px;}
 
 .btn_group .btn.disabled {background:#F7F7F9; color: #D4D7DC; pointer-events: none;}
@@ -403,16 +397,9 @@ border-radius: 8px; text-align:center}
 /* BOX */
 .info_box {padding: 24px 20px 20px; background: #fff; border: 1px solid #ECEEF0; border-radius: 12px;}
 .info_box .form_row:first-child {margin-top:20px}
-.info_box .form_label, .info_box .select_box .form_label {font-size: 12px; font-weight: 700;}
 .info_box input {margin-top: 8px;}
 
 /* table */
-
-
-
-
-
-
 
 
 /*  07.18 khj 수정 ///////////////// lmj추후 수정 */
