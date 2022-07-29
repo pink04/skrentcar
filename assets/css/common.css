@@ -18,6 +18,7 @@ html.scroll_hidden{width: 100%; height: 100%; overflow-y: hidden; padding-bottom
 html.scroll_hidden body{width: 100%; height: 100%; overflow-y: hidden;}
 .wrap {max-width:480px; margin:0 auto;background:#F7F7F9; min-height:100%; }
 .has_bg {background:#F7F7F9}
+.wrap.notice{background: #fff;}
 .sub_wrap.has_btn{padding-bottom:140px}
 /* header */
 .header {position:relative; display:flex; align-items : center; height:48px; padding:0 20px }
@@ -80,7 +81,7 @@ box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.04);border-radius: 12px; padding:12px}
 .footer_wrap .footer .link_wrap .sns li.naver a:before {background:url(../img/common/ico_naver.png) center / 28px}
 .footer_wrap .footer .link_wrap .sns {font-size:11px;  color: #858B93;}
 .footer_wrap .footer .select_wrap {position:relative; width: 111px; height:30px; font-size: 12px; background: #FFFFFF; border-radius: 20px; padding:0 10px; }
-.footer_wrap .footer .select_wrap select {width: 111px; height:30px;}
+.footer_wrap .footer .select_wrap select {width: 111px; height:30px; font-size:12px;}
 .footer_wrap .footer .select_wrap:after {content:''; position:absolute; top:8px; right:10px; display:inline-block; width:16px; height:16px; background:url(../img/common/ico_chevronD_16x16.png) center right / 16px}
 .footer_wrap .footer .copyright {font-size:11px; color:#858B93; margin-top:15px;}
 
@@ -277,6 +278,7 @@ border-radius: 8px; text-align:center}
 .btn_group .cont_wrap.car_info .name {font-size: 12px; font-weight: 700; padding-top:10px;}
 .btn_group .cont_wrap.car_info .place {font-size: 11px; }
 .btn_group .cont_wrap.car_info .date {font-size: 11px; }
+.btn_group .desc{color: #858B93; font-weight: 400; font-size: 12px; line-height: 18px; text-align: center; margin-top: 8px;}
 
 .btn_option_wrap {display:flex; }
 .btn_option_wrap li {margin-right:5px}
@@ -377,10 +379,11 @@ border-radius: 8px; text-align:center}
 .layerPopup.bottom .layerPopup_wrap.open_info .check_group > .chk_box { margin-left: 20px; margin-top: 30px; }
 
 /* tooltip */
+.layerPopup.tooltip {background:none;}
 .layerPopup.tooltip .layerPopup_wrap{width:260px;border: 1px solid #50555C;box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.12);border-radius: 12px;}
 .layerPopup.tooltip .layerPopup_wrap .layerPopup_heading {padding:0 ;border-bottom:0 none;}
 .layerPopup.tooltip .layerPopup_wrap .layerPopup_heading .btn_close {width:16px; height:16px;background-size: 16px;}
-.layerPopup.tooltip .layerPopup_wrap .layerPopup_content{font-size: 12px;line-height: 18px; padding-right:32px}
+.layerPopup.tooltip .layerPopup_wrap .layerPopup_content{font-size: 12px;line-height: 18px;padding:20px 20px 32px}
 .layerPopup.tooltip .layerPopup_wrap .layerPopup_content .tit{font-size:14px; font-weight: 700; margin-bottom:10px;}
 
 /* toast */

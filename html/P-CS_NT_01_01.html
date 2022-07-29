@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <title>SK렌터카</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- s: header -->
+    <header class="header"> <!-- header에 on클래스 추가되면 검색창이 나옴-->
+      <div class="nav_wrap">
+        <a href="#" class="ico_back">
+          <span class="blind">뒤로가기</span>
+        </a>
+        <h2>공지사항</h2>
+      </div>
+      <div class="side_menu"><!-- 검색버튼 눌르면 class="header" 애 on 클래스 추가 -->
+        <input id="serch" name="serch" type="serch" value="" placeholder="궁금한 점을 입력해 보세요">
+        <button href="#" class="icon_cancel_m"><span class="blind">모두 지우기</span></button>
+        <button href="#" class="icon_search_m"><span class="blind">검색</span></button>
+        <a href="#" class="ico_menu"><span class="blind">메뉴</span></a>
+      </div>
+    </header>
+    <!-- e: header -->
+    <!-- s : sub_wrap -->
+    <div class="sub_wrap type02">
+      <!-- s : 지점안내(단기,장기) -->
+      <div class="sub_tab notice">
+        <ul>
+          <li class="on"><a href="#">전체</a></li><!-- 활성화 class="on" -->
+          <li><a href="#">일반</a></li>
+          <li><a href="#">단기렌터카</a></li>
+          <li><a href="#">장기렌터카</a></li>
+          <li><a href="#">카테고리</a></li>
+          <li><a href="#">카테고리</a></li>
+          <li><a href="#">장기렌터카</a></li>
+          <li><a href="#">단기렌터카</a></li>
+        </ul>
+      </div>
+      <!-- s : branch_serch -->
+      <div class="branch_serch">
+        <div class="sub_cont top_notice">
+            <div class="branch_wrap">
+              <a href="#">
+                <p class="tit">SK렌터카 제주지점 위치변경 안내</p>
+              </a>
+            </div>
+        </div>
+        <div class="sub_cont">
+            <div class="branch_wrap">
+              <a href="#">
+                <p class="tit">22년 7월 2차 리콜 서비스 대상 차량 안내</p>
+                <p class="txt">2022.00.00<em class="new_teg"></em></p>
+              </a>
+            </div>
+          </div>
+          <div class="sub_cont">
+            <div class="branch_wrap">
+                <a href="#">
+                    <p class="tit">22년 7월 2차 리콜 서비스 대상 차량 안내</p>
+                    <p class="txt">2022.00.00<em class="new_teg"></em></p>
+                  </a>
+            </div>
+          </div>
+          <div class="sub_cont">
+            <div class="branch_wrap">
+                <a href="#">
+                <p class="tit_n">22년 7월 1차 리콜 서비스 대상 차량 안내</p>
+                <p class="txt">02-3664-5200</p>
+                </a>
+            </div>
+          </div>
+          <div class="sub_cont">
+            <div class="branch_wrap">
+                <a href="#">
+                <p class="tit_n">서울대지점 재오픈 안내</p>
+                <p class="txt">02-3664-5200</p>
+                </a>
+            </div>
+          </div>
+          <div class="sub_cont">
+            <div class="branch_wrap">
+                <a href="#">
+                <p class="tit_n">BIZSIREN 서버 교체 작업에 따른 서비스 일시중단 안내</p>
+                <p class="txt">02-3664-5200</p>
+                </a>
+            </div>
+          </div>
+          <div class="sub_cont">
+            <div class="branch_wrap">
+                <a href="#">
+                <p class="tit_n">보험연령 변경 시 대여료 증감액 변경 안내</p>
+                <p class="txt">02-3664-5200</p>
+                </a>
+            </div>
+          </div>
+
+
+        <!-- s : 검색결과 없음 -->
+        <!-- <div class="no_data">
+          <dl>
+            <dt>검색 결과가 없어요</dt>
+            <dd>다시 확인해 주세요</dd>
+          </dl>
+        </div>
+      </div> -->
+      <!-- e : 검색결과 없음 -->
+      <!-- e : branch_serch -->
+      <!-- e : 지점안내(단기,장기) -->
+    </div>
+  </div>
+  <!-- e : sub_wrap -->
+  </div>
+  <script>
+    $(".icon_search_m").click(function(){
+    $(".header").toggleClass("on");
+    });
+    $(".icon_cancel_m").click(function(){
+    $(".header").toggleClass("on");
+    });
+  </script>
+</body>
+
+</html>

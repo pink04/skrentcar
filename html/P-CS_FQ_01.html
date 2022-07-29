@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <title>SK렌터카</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- s: header -->
+    <header class="header"> <!-- header에 on클래스 추가되면 검색창이 나옴-->
+      <div class="nav_wrap">
+        <a href="#" class="ico_back">
+          <span class="blind">뒤로가기</span>
+        </a>
+        <h2>자주 찾는 질문</h2>
+      </div>
+      <div class="side_menu"><!-- 검색버튼 눌르면 class="header" 애 on 클래스 추가 -->
+        <input id="search" name="serch" type="serch" value="" placeholder="궁금한 점을 입력해 보세요">
+        <button href="#" class="icon_cancel_m"><span class="blind">모두 지우기</span></button>
+        <button href="#" class="icon_search_m" id="search"><span class="blind">검색</span></button>
+        <a href="#" class="ico_menu"><span class="blind">메뉴</span></a>
+      </div>
+    </header>
+    <!-- e: header -->
+    <!-- s : sub_wrap -->
+    <div class="sub_wrap type02">
+      <!-- s : 지점안내(단기,장기) -->
+      <div class="board_teb">
+        <ul class="reviw_box">
+          <li class="reviw_list">
+            <a href="" class="active">
+                <span class="review_txt">전체</span>
+            </a>
+        </li>
+          <li class="reviw_list">
+              <a href="">
+                  <span class="img_icon">✨</span>
+                  <span class="review_txt">결제</span>
+              </a>
+          </li>
+          <li class="reviw_list">
+              <a href="">
+                  <span class="img_icon">👍</span>
+                  <span class="review_txt">보험</span>
+              </a>
+          </li>
+          <li class="reviw_list">
+              <a href="">
+                  <span class="img_icon">🗓</span>
+                  <span class="review_txt">예약·변경</span>
+              </a>
+          </li>
+          <li class="reviw_list">
+              <a href="">
+                  <span class="img_icon">🚘</span>
+                  <span class="review_txt">운전</span>
+              </a>
+          </li>
+          <li class="reviw_list">
+            <a href="">
+                <span class="img_icon">💸</span>
+                <span class="review_txt">부가용품</span>
+            </a>
+          </li>
+          <li class="reviw_list">
+            <a href="">
+                <span class="img_icon">💸</span>
+                <span class="review_txt">고장·사고</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- s : branch_serch -->
+      <div class="branch_serch">
+        <h3 class="con_tit">자주 찾는 질문을 모아봤어요</h3>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="list_txt">취소 수수료를 알고 싶어요</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="list_txt">결제 수단을 변경하고 싶어요</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="list_txt">취소 수수료를 알고 싶어요</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="list_txt">취소 수수료를 알고 싶어요</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="list_txt">내용이 노출됩니다. 내용이 노출됩니다.내용이 노출됩니다. 내용이 노출됩니다. 내용이 노출됩니다.내용이 노출됩니다.내용이 노출됩니다. 내용이 노출됩니다.</p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="list_txt">내용이 노출됩니다. </p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="list_txt">내용이 노출됩니다. </p>
+            </a>
+          </div>
+        </div>
+        <div class="sub_cont">
+          <div class="branch_wrap">
+            <a href="#">
+              <p class="list_txt">내용이 노출됩니다. </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- s : 검색결과 없음 -->
+        <!-- <div class="no_data">
+          <dl>
+            <dt>검색 결과가 없어요</dt>
+            <dd>다시 확인해 주세요</dd>
+          </dl>
+        </div>
+      </div> -->
+      <!-- e : 검색결과 없음 -->
+      <!-- e : branch_serch -->
+      <!-- e : 지점안내(단기,장기) -->
+    </div>
+  </div>
+  <!-- e : sub_wrap -->
+  </div>
+  <script>
+    $(".icon_search_m").click(function(){
+    $(".header").toggleClass("on");
+    });
+    $(".icon_cancel_m").click(function(){
+    $(".header").toggleClass("on");
+    });
+  </script>
+</body>
+
+</html>

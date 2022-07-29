@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <title>SK렌터카</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/content.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <!-- s: header -->
+    <header class="header"> <!-- header에 on클래스 추가되면 검색창이 나옴-->
+      <div class="nav_wrap">
+        <a href="#" class="ico_back">
+          <span class="blind">뒤로가기</span>
+        </a>
+        <h2>이벤트</h2>
+      </div>
+      <div class="side_menu"><!-- 검색버튼 눌르면 class="header" 애 on 클래스 추가 -->
+        <input id="search" name="serch" type="serch" value="" placeholder="궁금한 점을 입력해 보세요">
+        <button href="#" class="icon_cancel_m"><span class="blind">모두 지우기</span></button>
+        <button href="#" class="icon_search_m" id="search"><span class="blind">검색</span></button>
+        <a href="#" class="ico_menu"><span class="blind">메뉴</span></a>
+      </div>
+    </header>
+    <!-- e: header -->
+    <!-- s : sub_wrap -->
+    <div class="sub_wrap type02">
+      
+        <!-- s : 지점안내(단기,장기) -->
+      <div class="tab_wrap">
+        <ul class="basic_tab">
+          <li class="on"><a href="javascript:avoid(0)">이벤트 알림</a></li><!-- 활성화 class="on" -->
+          <li><a href="javascript:avoid(0)">당첨자 안내</a></li>
+        </ul>
+      </div>
+
+      <div class="event_board">
+        <div class="event_filter">
+            <dir class="left_btn">
+                <button href="#" class="icon_check_m"><span class="blind">체크</span></button>
+                <p>종료한 이벤트도 함께 보기</p>
+            </dir>
+            <select name="filter option" class="event_select">
+                <option value="" selected="">신규순</option>
+                <option value="">00000000000</option>
+                <option value="">00000000000</option>
+                <option value="">0000000000000</option>
+            </select>
+        </div>
+        <ul>
+            <li>
+                <a href="">
+                    <img src="../assets/img/temp/@event_f_01.png" alt="">
+                    <p>SK렌터카 제주지점 이용후기 올리고 아이패드 에어 받자</p>
+                    <div class="date">
+                        <span>2022.07.01 ~ 2022.07.31<em class="new_teg"></em></span>
+                        <span class="limit_day">24일 남음</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="../assets/img/temp/@event_f_02.png" alt="">
+                    <p>제주지점 Polestar 2 단독 입고 대여료 최대 70% 할인</p>
+                    <div class="date">
+                        <span>2022.07.01 ~ 2022.07.31</span>
+                        <span class="limit_day">1일 남음</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="" class="end">
+                    <img src="../assets/img/temp/@event_f_02.png" alt="">
+                    <p>차량청결 클리닝 아이디어 공모전</p>
+                    <div class="date">
+                        <span>2022.07.01 ~ 2022.07.31</span>
+                        <span class="end">종료</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+      </div>
+    <!-- e : sub_wrap -->
+    </div>
+  <script>
+    $(".icon_search_m").click(function(){
+    $(".header").toggleClass("on");
+    });
+    $(".icon_cancel_m").click(function(){
+    $(".header").toggleClass("on");
+    });
+  </script>
+</body>
+
+</html>
