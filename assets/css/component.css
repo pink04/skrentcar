@@ -401,11 +401,7 @@ font-weight: 700; line-height: 24px; color: #50555C;}
 
 .branch_serch {margin-top: 12px;}
 .total_count {padding-left: 4px;font-size: 12px; line-height: 18px; color: #50555C; margin-bottom: 8px;}
-.branch_wrap a {position: relative; display: block; padding: 16px 52px 16px 20px; border: 1px solid #ECEEF0; box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.02); border-radius: 8px; overflow: hidden;}
-.branch_wrap a::after {position: absolute; right: 16px; top: 0; display: block; content: ''; width: 16px; height: 100%; background: url(../img/common/ico_chevronR_grey02_16x16.png) no-repeat center; background-size: 16px;}
-.branch_wrap p + p {margin-top: 2px;}
-.branch_wrap .tit {font-size: 14px; font-weight: 700; line-height: 22px;}
-.branch_wrap .txt {font-size: 12px; line-height: 18px; color: #858B93;}
+
 .no_data {padding-top: 120px; text-align: center;}
 .no_data dl dt {font-weight: 700; line-height: 24px;}
 .no_data dl dd {font-size: 14px; line-height: 22px; color: #50555C; margin-top: 8px;}
